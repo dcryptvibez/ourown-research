@@ -1,0 +1,86 @@
+# Deliverable 12 — Assumptions, Evidence-Gap Register & Evidence Register
+
+**Columns required:** assumption/question · why it matters · current evidence · source · confidence · impact if wrong · how to verify · who verifies · deadline/stage · decision blocked.
+
+Confidence scale: **High** (authoritative, relevant) · **Medium** (credible, meaningful limits) · **Low** (indirect/weak) · **Unverified** (not independently established).
+
+---
+
+## Part A — Mandatory evidence gaps (the seven given in the brief) + discovered gaps
+
+| # | Assumption or unanswered question | Why it matters | Current evidence | Source | Conf. | Impact if wrong | How to verify | Who | Deadline | Decision blocked |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | **Customer demand exists in Kano** | The entire investment | None — no interviews, no live orders, no public Kano e-grocery data anywhere | Research finding (all streams) | Unverified | Total loss of pilot capital | 30-interview study + 100-order micro-pilot (Deliverable 11 A1/A8) | Founders | Days 1–30 | Go/no-go, all hiring, inventory spend |
+| 2 | **TAM/SAM/SOM** | Sizing credibility | Bottom-up model only: TAM ₦270–590bn (Low confidence), SOM ₦30–144m | Deliverable 3 | Low | Over/under-investment | Pilot AOV/frequency data; NBS NLSS 2022/23 state tables; ward-level enumeration | Analyst + NBS data | Days 30+ | Investor/founder capital decisions |
+| 3 | **Glovo narrative** ("began in Lagos, expanded to Abuja, multi-category") | Competitive planning | Partially corrected: entered Nigeria **March 2021 Lagos**, then Abuja, Ibadan, PH (Sep 2024); **not in Kano**; parent Delivery Hero → Uber deal (Jul 2026); Jumia/Bolt Food exits confirmed | Techeconomy 6 Oct 2026; glovoapp.com /kano 404; Delivery Hero 16 Jul 2026; TechCrunch 14 Dec 2023 | High (current status) | Misjudged threat timing | Monitor Uber/Glovo Kano launch; Chowdeck city list | Founders | Ongoing | Competitive strategy, expansion urgency |
+| 4 | **Supplier relationships (Ghadco, Pop Cola)** | Assortment & margin | Identities **verified** (Ghadco Nigeria Ltd; Mamuda Beverages); **no commercial terms, no interest, no agreement** exists | ghadconigeria.com; mamudagroup.com (read Oct 2026) | High (identity) / Unverified (terms) | Assortment/margin assumptions collapse | Meetings + written price lists (Deliverable 11 A3) | Founders | Days 2–7 | First purchase order, pricing |
+| 5 | **5% gross margin, ₦60m/₦100m sales, ₦1,500–1,700 delivery, discounts/rewards** | Core economics | Modelled: 5% is negative-contribution except narrow cases; ₦60m = 500–1,000 orders/mo; ₦1,500–1,700 sits inside observed Nigerian band but has zero Kano data | Deliverable 6 model; Jumia/Fez/Kwik fee evidence | Medium (model) / Low (Kano fees) | Loss-making operations; unrealistic targets | Real quotes + A/B fee test + observed AOV | Founders + analyst | Days 30 (A10) | Pricing policy, target-setting |
+| 6 | **Technology is production-ready** | Launch safety | Founder-reported features only; **no code audit, security, load or settlement test** | Brief §2.5 | Unverified | Payment loss, data breach, trust collapse at launch | 10 acceptance tests + independent review (Deliverable 8 §4) | External tech reviewer | Days 8–21 | Permission to accept real orders |
+| 7 | **Afrizen Capital shell adequate; eventual OurOwn entity** | Contracts, liability, tax, PSP | Not reviewed; objects clause unknown; CAC annual-returns status unknown | CAC check required | Unverified | Contract invalidity, onboarding failure, personal liability | Lawyer review + CAC portal check (Deliverable 9 §10 Q1) | Lawyer/company secretary | Days 1–14 | Signing any contract, PSP live mode |
+| 8 | **Delivery partner covering Kano+Abuja exists (founder claim)** | Expansion path & pilot logistics | **Unverified claim**; Kwik explicitly Lagos-only; GIG Kano exists (3 centres); Fez Kano hub 2026 (snippet) | kwik.delivery; giglogistics.com; fez (snippet) | Low | Wrong logistics plan, cost overruns | Mystery-shop quotes (Deliverable 11 A5) | Ops lead | Days 8–12 | Delivery model, Abuja plans |
+| 9 | **Kano AOV / basket size** | Every unit-economics output | No published figure exists anywhere (ECDB/Statista paywalled) | Research finding | Unverified | Wrong break-even math | Pilot data (A8) | Founders | Day 30 | Minimum basket, fee, targets |
+| 10 | **Willingness to pay delivery fees in Kano** | Fee strategy | Zero Kano data; national band ₦1,400–₦1,700 entry; Chowdeck ₦3,000 free bar | Jumia VendorHub snippet; chowdeck.com | Low | Conversion collapse or margin bleed | A/B fee test (A6/pilot) | Founders | Day 30 | Delivery pricing (Deliverable 6 §3) |
+| 11 | **Repayment/prepayment acceptance** (prepaid-first policy) | COD cost control | ~23% of NG online sales in cash; 12% trust mobile payment over COD (single study, snippet); WhatsApp transfer-before-delivery is established norm | PaymentsCMI 2024 (404); Northumbria 2026 (snippet); BiteExpress | Low | High failed-delivery losses (20–30% claimed) | Ask in interviews; observe pilot payment mix | Founders | Days 1–30 | Payment policy |
+| 12 | **Repacking/own-label scope** | NAFDAC manufacturer regime | Unknown whether founders intend repacking; regs not machine-readable | nafdac.gov.ng; Pre-packaged Food Regs 2022 (snippet) | Unverified | Registration enforcement risk | Written NAFDAC-consultant/lawyer answer | Lawyer | Before first sale | Assortment design (bulk sales?) |
+| 13 | **Rider classification (contractor vs employee)** | Labour liability | NICN *Olatunji v Uber* (2017) declined employment — control test; our operating model unknown | Manifield analysis (2026) | Medium | PAYE/pension/dismissal exposure | Lawyer review of actual operating practices | Lawyer | Before hiring/dispatch | Rider engagement model |
+| 14 | **NDPC registration threshold** | Data compliance | >200 subjects/6 months widely summarised; **exact text UNVERIFIED (PDF)**; GAID audit regime confirmed | ndpc.gov.ng; Legal500 21 Jan 2026 | Medium | Penalties up to ₦10m/2% revenue | Read gazetted guidance; engage licensed DPCO | DPO/lawyer | Before launch | Compliance budget, privacy design |
+| 15 | **VAT treatment of mixed basket** | Pricing/tax | Basic food items zero-rated; standard rate 7.5% | PwC (May 2026) | High (rule) / Unverified (SKU mapping) | Over/under-charging tax | SKU-by-SKU tax mapping | Tax adviser | Days 1–14 | Pricing, invoicing |
+| 16 | **Institutional (B2B) demand in Kano** | Density wedge (O1) | No public data at all; B2B rails exist nationally (Omnibiz/MarketForce/B2B BNPL $1.4bn) | Research finding; snippets | Low | Missed fastest path to density | 5 institutional interviews (A1) | Founders | Days 1–7 | Segment priority |
+| 17 | **Radio reach/CAC in Kano** | Marketing plan | SCIMDER 2024: 51% listen; n=737; no CPM data | Spotlight Post/Premium Times Feb 2025 | Medium | Wasted marketing budget | Buy 1 test spot with trackable offer code | Marketing lead | Days 8–21 | Channel mix |
+| 18 | **Order density achievable in one polygon** | The GoLemon death variable | No Kano drop-density data; competitor micro-scale | Research finding | Unverified | Company fails despite positive per-order contribution | Rider interviews + pilot drops/km² (A5/A8) | Ops lead | Day 30 | Scale vs pause decision |
+| 19 | **Cold chain needed at launch?** | Capex | Nigeria <1,000 reefers vs 25,000 needed; 40% produce loss claims (sponsor provenance) | USITA 2022; Nairametrics 2025 (partner content) | Medium | Spoilage/capex trap | Decision: ambient-first (recommended) | Founders | Now | Assortment scope |
+| 20 | **"Kano Emira levy" / "Electronic Transactions Act 2015"** (brief items) | Compliance completeness | **Neither could be found in any official source** | cac/fccpc/nrs searches | Unverified (likely non-existent) | Wasted compliance effort or missed obligation | Ask lawyer to confirm against gazette | Lawyer | Days 1–14 | Compliance checklist |
+
+### Discovered material gaps beyond the brief's seven
+
+| # | Gap | Impact | Verify via | Owner |
+|---|---|---|---|---|
+| 21 | No independent evidence **Ghadco supplies small/new retailers** | Sourcing plan may fail at first contact | Direct meeting | Founders |
+| 22 | **Ghadco's "36-state warehouse" claim unverified** | Cannot build out-of-state supply on it | Depot-by-depot check before expansion | Ops |
+| 23 | **Chowdeck/Glovo Kano entry timing unknown** (Uber owns Glovo Africa) | Window may be shorter than assumed | Quarterly monitoring | Founders |
+| 24 | **FCCPC sales-promotion registration** applicability to discounts unknown | Enforcement risk on promos | Lawyer/FCCPC enquiry | Lawyer |
+| 25 | **Kano state/LGA permit schedule** (business premises, tenement, signage) not retrieved (PDF/425 errors) | Operating without permits | KIRS + LGA physical enquiry | Ops |
+| 26 | **Okada/keke regulatory status** in Kano unknown (periodic bans) | Delivery fleet disruption | State transport authority enquiry | Ops |
+| 27 | **NLSS 2022/23 & GHS Panel Wave 5** household data not obtained (PDFs) | Basket-size anchor stuck at 2019 data | Download from nigerianstat.gov.ng | Analyst |
+| 28 | **EFInA A2F North-West/Kano microdata** not obtained | Payment-behaviour inputs generic | Free request from EFInA | Analyst |
+| 29 | **Paga & PayGate commercial terms unpublished** | Cannot evaluate two shortlisted PSPs | Written RFP responses | Tech lead |
+| 30 | **Local supermarket claims (Sahad, Sahibco, Quick Buy, Barakat) unverified** | Competitive benchmark incomplete | In-person audit (A4) | Ops |
+
+---
+
+## Part B — Research evidence register (sample; representative entries across all areas)
+
+| EvID | Research question | Claim/finding | Source (org) | Pub. date | Accessed | Geo relevance | Evidence type | Conf. | Limitations | Effect on decisions |
+|---|---|---|---|---|---|---|---|---|---|---|
+| E01 | Market size | Nigeria retail ₦25.4trn/$19.0bn 2025 | Euromonitor via Practical Ecommerce | 1 Sep 2026 | 30 Oct 2026 | Nigeria | Industry report (secondary relay) | Medium | Paywalled original | Anchors TAM cross-check |
+| E02 | Online grocery size | US$95m 2025, 0–5% share, 87–87.5% abandonment | ECDB | 2025 (live page) | 30 Oct 2026 | Nigeria | Modelled market data | Med-High | Modelled, not audited | Sets penetration reality; conversion assumptions |
+| E03 | Channel structure | Open market 78–85% of FMCG volume | DALA citing NielsenIQ/Euromonitor | 29 Mar 2026 | 30 Oct 2026 | Nigeria | Vendor analysis citing industry | Medium | Underlying NIQ tables not public | Informal competition framing |
+| E04 | Channel structure | 70% food shopping informal; open-air 72% of retail | USDA FAS GAIN NI2024-0014 | 3 Oct 2024 | 30 Oct 2026 | Nigeria | Government report | Medium | **Snippet only — PDF not opened; verify manually** | Most citable structural figure |
+| E05 | Inflation | Sept 2026 headline 14.63% | NBS via TradingEconomics/press | Oct 2026 | 30 Oct 2026 | Nigeria | Official statistic (relay) | High (headline) | Food 19.59% snippet-level; CPI rebased Jan 2025 | Pricing discipline policy |
+| E06 | Kano population | Metro 4.91m; state 15.46m (2022 proj.) | citypopulation.de (NPC/NBS) | 2022 proj. | 29 Oct 2026 | Kano | Official projections | High | Census disputed; page warns of error | Sizing base (not state pop) |
+| E07 | Kano poverty | MPI 66.3%, MPI 0.270 | NBS/OPHI MPI 2022 | 17 Nov 2022 | 29 Oct 2026 | Kano State | Official survey | Med-High | Snippet-triangulated (PDF) | Price-sensitivity, value formats |
+| E08 | Connectivity | Kano 9.03m internet subs, 3rd nationally | NBS internet subscriptions | Q4 2023 | 29 Oct 2026 | Kano State | Official statistic | High | Subscriptions ≠ users; 2023 data | Digital reach confidence |
+| E09 | Competitor status | Glovo Nigeria: Lagos/Abuja/PH/Ibadan; Country MD confirmed; fastest-growing market | Techeconomy | 6 Oct 2026 | 30 Oct 2026 | Nigeria | News (direct read) | High | Company-sourced claims | Threat window assessment |
+| E10 | Competitor status | glovoapp.com/en/ng/kano → HTTP 404 | Glovo official site | live | 30 Oct 2026 | Kano | Primary fetch | High | 404 ≠ permanent | White-space claim |
+| E11 | Competitor status | Jumia Food discontinued in 7 markets | Jumia Group | 14 Dec 2023 | 30 Oct 2026 | Nigeria+ | Company announcement | High | — | Category economics lesson |
+| E12 | Failure case | GoLemon shutdown; ₦43,700 basket; positive contribution; density problem | TechCabal | 29 Jul 2026 | 30 Oct 2026 | Lagos | Journalism (direct read) | High | Company statements | Core risk model (T2) |
+| E13 | Failure case | Copia liquidation; $123m raised; 50k agents | TechCabal | 30 Sep 2026 | 30 Oct 2026 | Kenya | Journalism (direct read) | High | Kenya context | Agent-model + infrastructure lesson |
+| E14 | Success case | Chowdeck profitable; 11 cities; $9m raise; 40→500 dark stores | TechCrunch | 11 Aug 2025 | 30 Oct 2026 | Nigeria | Journalism (direct read) | High | Profitability is a company claim | Sequence + kill-rule playbook |
+| E15 | Unit-economics benchmark | Blinkit ~0.3% adj. EBITDA on order value, 2,400 stores | Eternal results via secondary | Oct 2026 | 30 Oct 2026 | India | Earnings (snippet) | Medium | Not primary filing; India density | Margin-target realism |
+| E16 | Supplier identity | Ghadco Nigeria Ltd: Kano HQ, portfolio, contacts | Ghadco website | updated 26 Nov 2024 | 30 Oct 2026 | Kano | Company source | High (identity) | 36-state claim self-published | Supplier outreach plan |
+| E17 | Supplier identity | Pop Cola = Mamuda Beverages, Kano; FSSC 22000; open distributor invite | Mamuda sites + franchise listing | live 2026 | 30 Oct 2026 | Kano | Company source | High | Terms "negotiable", none published | Sourcing strategy |
+| E18 | Payment fees | Paystack 1.5%+₦100 cap ₦2,000; DVA 1% cap ₦300; T+1 | Paystack support KB | live | 30 Oct 2026 | Nigeria | Official docs | High | paystack.com/pricing 403 to bots | Payment cost model, PSP scorecard |
+| E19 | Payment fees | Monnify 1.5% cap ₦2,000; T+0 22:00; splits max 5 manual | Monnify pricing/docs | live | 30 Oct 2026 | Nigeria | Official docs | High | ₦500 VA line ambiguous | PSP scorecard |
+| E20 | Payment reliability | Paystack 2019 outage: debits without value; queue failure independent of payments | Paystack blog (CTO) | 15 Aug 2019 | 30 Oct 2026 | Nigeria | First-party post-mortem | High | Historical | Verify-not-webhook requirement |
+| E21 | Delivery cost | GIG Logistics: 3 Kano centres, closed Sundays | GIG Logistics | live | 30 Oct 2026 | Kano | Company source | High | — | 3PL option, 7-day gap |
+| E22 | Delivery cost | Kwik now "focused on Lagos Metropolitan Area" | kwik.delivery | live | 30 Oct 2026 | Nigeria | Company source | High | Third parties still list Kano | Rules out assumed partner |
+| E23 | COD risk | COD rejection 20–30%; ~23% cash share | Selligate / PaymentsCMI | 2024–26 | 30 Oct 2026 | Nigeria | Vendor page / snippet | Low-Med | Vendor incentive; no primary citation | Prepaid-first policy (to be validated) |
+| E24 | Kano media | 51% listen to radio; station leaders; devices | SCIMDER n=737 via Spotlight Post/Premium Times | Feb 2025 | 30 Oct 2026 | Kano State | Academic/media study | Medium | One state, one centre, no CPM data | Channel mix |
+| E25 | Regulation | FIRS replaced by Nigeria Revenue Service (2025 Act) | NRS / Legal500-KPMG | 5 Aug 2025 | 30 Oct 2026 | Nigeria | Official + law-firm analysis | High | Commencement date to confirm | Tax compliance checklist |
+| E26 | Regulation | FCCPC e-commerce: all disclosures before payment | FCCPC | live | 30 Oct 2026 | Nigeria | Official guidance | High | — | Delivery-fee disclosure policy |
+| E27 | Regulation | NDPA audit regime: 31 March returns via DPCO; penalties ₦10m/2% | Advocaat via Legal500 | 21 Jan 2026 | 30 Oct 2026 | Nigeria | Law-firm analysis | Med-High | Threshold text unverified | Compliance timeline |
+| E28 | Regulation | No "Cybersecurity Act 2025"/"NCSA"; Cybercrimes (Amendment) Act 2024; 0.5% levy suspended | PLAC/KPMG/Dubawa | 2024–25 | 30 Oct 2026 | Nigeria | Statute text + secondary | Medium-High | Dubawa page 404 | Correct compliance claims |
+| E29 | Tech environment | Android 84.2% of Nigeria mobile; Tecno/Infinix lead | StatCounter | Sept 2026 | 30 Oct 2026 | Nigeria | Measurement panel | High | Urban-skewed panels | Product performance targets |
+| E30 | Customer acquisition | PalmPay ₦250 per activated referral | Independent NG | 21 Jun 2024 | 30 Oct 2026 | Nigeria | News (direct read) | Medium | 2024 promo rate, may have changed | Referral budget anchor |
+
+**Conflicts register (per §4.5 of the brief):** (a) e-commerce size — Euromonitor $368m (goods) vs Mordor $10.5bn (total GMV): scope difference, use Euromonitor for grocery relevance; (b) $13.2bn "modern retail" (2024) vs $19bn total (2025): likely scope labelling error in trade press — use $19bn; (c) informal share 70% (USDA, transactions) vs 78–95% (NielsenIQ, volume) vs ~90% (Oxford Business Group, value): different bases — quote with basis; (d) petrol ₦1,330 (GlobalPetrolPrices) vs ₦1,596 (NBS PMS watch): use higher for modelling; (e) Ghadco founded 1991 (company) vs 1993 (register): company claim preferred, flagged; (f) inflation series pre/post Jan-2025 rebase: never chart as one line.
