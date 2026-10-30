@@ -104,6 +104,9 @@ def build() -> None:
         text = src.read_text(encoding="utf-8")
         md.reset()
         body = md.convert(text)
+        # point internal markdown links at the rendered HTML pages
+        for target, _lab in PAGES:
+            body = body.replace(f'href="{target}"', f'href="{slug(target)}"')
         active_nav = "\n  ".join(
             f'<a class="{"active" if f == fname else ""}" href="{slug(f)}">{html.escape(lab)}</a>'
             for f, lab in PAGES
