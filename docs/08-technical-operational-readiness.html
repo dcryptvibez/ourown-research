@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>8. Tech &amp; Ops Readiness — OurOwn Market Research</title>
+<style>
+:root{--bg:#f7f6f3;--panel:#fff;--ink:#1c1b19;--muted:#6b675f;--accent:#0b6b4f;--line:#e4e1da;--code:#f0efea}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+.layout{display:flex;min-height:100vh}
+nav{width:290px;flex:0 0 290px;background:#12211c;color:#dfe7e3;padding:22px 18px;position:sticky;top:0;height:100vh;overflow-y:auto}
+nav .brand{font-size:19px;font-weight:700;color:#fff;letter-spacing:.2px}
+nav .sub{font-size:12px;color:#8fb3a6;margin:4px 0 18px}
+nav a{display:block;color:#c9d8d2;text-decoration:none;padding:7px 10px;border-radius:7px;font-size:14px;margin-bottom:2px}
+nav a:hover{background:#1d332b;color:#fff}
+nav a.active{background:var(--accent);color:#fff}
+main{flex:1;padding:38px 46px 80px;max-width:1000px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:30px 36px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+h1{font-size:30px;margin:0 0 6px;line-height:1.25}
+h2{font-size:22px;margin:34px 0 10px;padding-top:18px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:24px 0 8px}
+h4{font-size:15px;margin:18px 0 6px;color:var(--muted)}
+p,li{font-size:15.5px}
+a{color:var(--accent)}
+blockquote{margin:14px 0;padding:10px 16px;border-left:4px solid var(--accent);background:#eef4f1;color:#33443d;border-radius:0 8px 8px 0}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+th{background:#eef1ee;font-weight:600;white-space:nowrap}
+tr:nth-child(even) td{background:#fafaf8}
+code{background:var(--code);padding:2px 5px;border-radius:4px;font-size:13.5px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+pre{background:#12211c;color:#e7efe9;padding:16px;border-radius:10px;overflow-x:auto}
+pre code{background:none;color:inherit;padding:0}
+hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-top:30px}
+.pager a{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 16px;text-decoration:none;font-size:14px}
+.pager a:hover{border-color:var(--accent)}
+.crumb{color:var(--muted);font-size:13px;margin-bottom:14px}
+@media(max-width:860px){.layout{flex-direction:column}nav{width:100%;flex:none;height:auto;position:static}main{padding:22px 16px 60px}.card{padding:20px 16px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<nav>
+  <div class="brand">OurOwn Market Research</div>
+  <div class="sub">Kano grocery e-commerce · evidence-based validation · Oct 2026</div>
+  <a class="" href="index.html">Research Plan</a>
+  <a class="" href="01-executive-research-summary.html">1. Executive Summary</a>
+  <a class="" href="02-business-and-market-research-report.html">2. Business &amp; Market Report</a>
+  <a class="" href="03-market-sizing-model.html">3. Market Sizing (TAM/SAM/SOM)</a>
+  <a class="" href="04-competitor-intelligence-database.html">4. Competitor Database</a>
+  <a class="" href="05-supplier-research-pack.html">5. Supplier Research Pack</a>
+  <a class="" href="06-unit-economics-workbook-spec.html">6. Unit Economics Workbook</a>
+  <a class="" href="07-swot-tows.html">7. SWOT &amp; TOWS</a>
+  <a class="active" href="08-technical-operational-readiness.html">8. Tech &amp; Ops Readiness</a>
+  <a class="" href="09-regulatory-compliance-memo.html">9. Regulatory &amp; Compliance</a>
+  <a class="" href="10-ourown-whitepaper-draft.html">10. Whitepaper Draft</a>
+  <a class="" href="11-30-day-validation-plan.html">11. 30-Day Validation Plan</a>
+  <a class="" href="12-assumptions-evidence-gap-register.html">12. Assumptions &amp; Gaps Register</a>
+  <a class="" href="13-decision-framework.html">13. Decision Framework</a>
+</nav>
+<main>
+  <div class="crumb">OurOwn research package · 8. Tech &amp; Ops Readiness</div>
+  <div class="card">
+    <h1 id="deliverable-8-technical-operational-readiness-assessment">Deliverable 8 — Technical &amp; Operational Readiness Assessment</h1>
+<p><strong>Scope:</strong> moving OurOwn from a Google AI Studio prototype (founder-reported features) to a reliable operating platform. <strong>No code audit has been performed</strong> — nothing below should be read as "OurOwn's code does/doesn't do X". Items requiring direct inspection are marked <strong>🔍 inspect</strong>.</p>
+<p><strong>Verified context (Oct 2026):</strong> Nigerian outages have no published ₦ costs (Paystack's 2019 post-mortem is qualitative) → instrument your own telemetry. Nigerian network reality: design for the 10th percentile (&lt;1 Mbps, 300–800 ms RTT); Android 84.2% share, Tecno/Infinix low-RAM dominant (StatCounter Sept 2026). Payment failure modes are channel-specific (Paystack status page shows Verve-only degradation windows during Interswitch maintenance).</p>
+<hr />
+<h2 id="1-launch-readiness-checklist">1. Launch-readiness checklist</h2>
+<p>Classification: <strong>🔴 Must have before launch · 🟡 Must have before scaling · ⚪ Can wait.</strong></p>
+<h3 id="product-catalogue-inventory">Product catalogue &amp; inventory</h3>
+<ul>
+<li>🔍 <strong>🔍 inspect</strong> SKU catalogue with stable IDs, unit of measure, NAFDAC number, batch/expiry captured at receipt — <em>prototype has "product identifiers + spreadsheet import"; verify uniqueness, encoding, and import validation</em></li>
+<li>🔍 🔍 <strong>Price accuracy</strong>: price change workflow, effective timestamps, audit of last price change (price errors = instant loss at 8–10% margin)</li>
+<li>🔍 🔴 <strong>Live stock count at order time</strong> (overselling is a customer-trust event): stock decremented at order placement, not delivery; low-stock alerts</li>
+<li>🔴 Stock-opportunity handling: out-of-stock → refund or substitute <strong>with customer pre-approval</strong></li>
+<li>🟡 Multi-location stock (store + pickup point) — later</li>
+<li>⚪ Supplier PO module, auto-reorder — later</li>
+</ul>
+<h3 id="checkout-payments">Checkout &amp; payments</h3>
+<ul>
+<li>🔴 <strong>Server-side payment verification</strong> — webhook is an optimisation, never the source of truth: poll the PSP <code>verify</code> endpoint keyed by unique <code>order_reference</code> (Paystack 2019 outage: notifications failed while money moved)</li>
+<li>🔴 <strong>Idempotency</strong>: same reference retried → one charge, one fulfilment; dedupe webhooks by event ID</li>
+<li>🔴 <strong>State machine</strong>: <code>PAYMENT_PENDING → PAID_UNFULFILLED → PACKED → DISPATCHED → DELIVERED → SETTLED</code> with <code>REFUND_QUEUED</code>, <code>FAILED</code> — no silent skips</li>
+<li>🔴 <strong>Duplicate-payment protection</strong>: customer retry path must reuse the reference or auto-refund the duplicate within 24h 🔍 <strong>🔍 inspect</strong></li>
+<li>🔴 <strong>Amount-match handling</strong> for pay-with-transfer (under/over payment queue — customers will send ₦20,000 for a ₦19,850 order)</li>
+<li>🔴 <strong>Reconciliation job</strong> every 15–30 min: PSP API ↔ DB ↔ fulfilment, with an ops queue for unmatched credits; daily settlement report vs bank credit</li>
+<li>🔴 <strong>Refund flow</strong> with SLA stated in T&Cs; grocery rules: wrong/expired/damaged always refunded; hygiene-sealed goods non-returnable (disclosed pre-payment)</li>
+<li>🔴 Hosted checkout only — <strong>never store card data</strong> (PCI SAQ A path; confirm with PSP in writing under v4.0.1 rules) 🔍 <strong>🔍 inspect</strong></li>
+<li>🟡 Per-channel health/fallback (card → transfer → USSD ordering re-weighted at runtime)</li>
+<li>🟡 Virtual account per repeat customer (reconciliation speed)</li>
+<li>⚪ Saved cards, BNPL, loyalty wallet</li>
+</ul>
+<h3 id="order-processing-fulfilment">Order processing &amp; fulfilment</h3>
+<ul>
+<li>🔴 Order → pick list → pack → dispatch with timestamps; substitution policy enforced</li>
+<li>🔴 <strong>Confirmation call/WhatsApp before dispatch</strong> for first orders and all COD (failed-delivery cost control)</li>
+<li>🔴 Customer notifications at each state (SMS/WhatsApp — SMS as channel, not a security control)</li>
+<li>🟡 Route/zone management, batch windows, rider assignment</li>
+<li>🟡 Delivery proof (photo/PIN); failed-delivery reason codes feeding Sheet 8</li>
+</ul>
+<h3 id="admin-access-audit">Admin, access, audit</h3>
+<ul>
+<li>🔴 Role-based access control (owner/ops/support) + <strong>MFA on all admin accounts</strong></li>
+<li>🔴 <strong>Audit log</strong> on price changes, refunds, order edits, user admin — immutable, retained</li>
+<li>🔴 Daily backups of orders/customers/inventory <strong>with tested restore</strong> 🔍 <strong>🔍 inspect</strong></li>
+<li>🟡 Admin dashboard metrics wired to Deliverable 11 §7 definitions</li>
+<li>⚪ Advanced analytics/BI</li>
+</ul>
+<h3 id="security">Security</h3>
+<ul>
+<li>🔴 OWASP <strong>ASVS Level 2</strong> for storefront/checkout/account flows (v5.0.0, 30 May 2025): especially object-level authorisation on order IDs (customer A must not read customer B's address), cart price/quantity tampering, webhook signature verification</li>
+<li>🔍 🔴 Penetration test or at minimum OWASP Top-10 checklist sign-off by an independent reviewer before launch</li>
+<li>🔴 Secrets management (PSP keys never in the repo or client bundle) 🔍 <strong>🔍 inspect</strong></li>
+<li>🔴 Rate limiting + bot protection on login/OTP/order endpoints</li>
+<li>🟡 Dependency/vulnerability scanning; incident-response runbook</li>
+<li>⚪ Bug bounty</li>
+</ul>
+<h3 id="data-protection-ndpa">Data protection (NDPA)</h3>
+<ul>
+<li>🔴 Privacy notice at checkout; consent capture (timestamped) for marketing and for sharing address/phone with riders</li>
+<li>🔴 Data minimisation: no card data; mask phone numbers in support tooling; riders see only their stops</li>
+<li>🔴 <strong>NDPC registration assessment</strong> (the &gt;200-data-subjects/6-months threshold will be crossed early — see Deliverable 9; exact threshold text unverified)</li>
+<li>🟡 Data-processing agreement templates (riders, 3PL, PSP, SMS); breach-notification procedure; annual audit return via licensed DPCO</li>
+<li>⚪ Formal DPIA beyond the delivery/geolocation one (GAID audit template expects records)</li>
+</ul>
+<h3 id="monitoring-reliability">Monitoring &amp; reliability</h3>
+<ul>
+<li>🔴 Uptime + error alerting on checkout, payment verify, order create</li>
+<li>🔍 🔴 <strong>Load test</strong> the order flow at 10× expected peak (evening batch window) on low-end Android throttling</li>
+<li>🟡 Per-channel payment success-rate dashboard; cart-abandonment instrumentation (baseline: 87% national)</li>
+<li>🟡 Status page / customer-facing "we're verifying your payment" state instead of hard errors</li>
+<li>⚪ Multi-region failover</li>
+</ul>
+<h3 id="reporting">Reporting</h3>
+<ul>
+<li>🔴 Daily: orders, AOV, contribution, settlement received, failed payments, complaints</li>
+<li>🟡 Weekly: repeat rate, on-time %, availability %, failed-delivery %, inventory days, cash position</li>
+</ul>
+<hr />
+<h2 id="2-staged-summary">2. Staged summary</h2>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Before first real customer order</strong></td>
+<td>All 🔴 items in Checkout/Payments, stock-at-order, RBAC+MFA, audit log, backups+restore test, privacy notice, hosted checkout, verify+reconcile, refund flow, notifications, confirmation call process</td>
+</tr>
+<tr>
+<td><strong>Before scaling past pilot</strong></td>
+<td>🟡 items: route/batching, per-channel fallback, virtual accounts, DPA + NDPC registration completion, pen test, load test, analytics</td>
+</tr>
+<tr>
+<td><strong>Can wait</strong></td>
+<td>⚪: multi-location, BNPL, BI, bug bounty, marketplace vendor module (build only when Stage 3 gate passes)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-explicitly-out-of-scope-of-this-assessment">3. Explicitly out of scope of this assessment</h2>
+<p>No source code was reviewed; no security scan, load test, or payment-settlement test was run by this research. Founder-reported features (registration, location, cart, checkout, Paystack test, tracking, admin, inventory import) are treated as <strong>unverified claims</strong>.</p>
+<h2 id="4-what-must-be-tested-directly-acceptance-criteria">4. 🔍 What must be tested directly (acceptance criteria)</h2>
+<ol>
+<li><strong>Duplicate payment</strong>: submit the same order twice / retry mid-flow → exactly one charge, or automatic refund of the second within 24h.</li>
+<li><strong>Webhook kill test</strong>: disable webhook receiver → system still marks orders paid via polling, with no duplicates.</li>
+<li><strong>Settlement</strong>: ₦5,000 live charge → verify T+1 credit to bank matches dashboard within 1 kobo; run over a weekend.</li>
+<li><strong>Refund</strong>: live refund → days-to-customer recorded; matches T&amp;Cs.</li>
+<li><strong>Oversell</strong>: set stock to 1, attempt purchase of 2 → blocked.</li>
+<li><strong>AuthZ</strong>: with two customer accounts, manipulate an order ID → 403/404, no data leak (ASVS 5.0 object-level auth).</li>
+<li><strong>Admin takeover</strong>: MFA enforced; audit log entries created for price change/refund/user changes.</li>
+<li><strong>Backup restore</strong>: restore yesterday's backup into a scratch environment; time it; count lost records.</li>
+<li><strong>Load</strong>: 50 concurrent checkouts on throttled 3G + low-end Android → no order loss, p95 &lt; 5s for catalogue.</li>
+<li><strong>Power/network loss</strong>: kill connectivity mid-checkout → cart survives (offline-tolerant cart), no orphaned "paid" states.</li>
+</ol>
+<h2 id="5-evidence-base">5. Evidence base</h2>
+<p>Paystack status page (status.paystack.com) · Paystack 2019 outage post-mortem (paystack.com/blog/news-updates/august-9-outage) · TheCable NIBSS failures 13 May 2026 (snippet) · CBN Risk-Based Cybersecurity Framework 31 May 2024 (via Legal500, 18 Sep 2024) · NDPA/GAID regime (via Legal500, 21 Jan 2026) · OWASP ASVS 5.0.0 (30 May 2025) · PCI SSC SAQ A v4.0.1 updates (30 Jan 2025 blog, snippet) · Ookla Speedtest Nigeria Sept 2026 · StatCounter Nigeria Sept 2026 · Cybercrimes (Amendment) Act 2024 + suspended 0.5% levy (PLAC/KPMG snippets; <strong>no "Cybersecurity Act 2025"/"NCSA" exists — do not cite one</strong>).</p>
+    <div class="pager"><a href="07-swot-tows.html">← 7. SWOT &amp; TOWS</a><a href="09-regulatory-compliance-memo.html">9. Regulatory &amp; Compliance →</a></div>
+  </div>
+</main>
+</div>
+</body>
+</html>

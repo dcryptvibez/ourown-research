@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10. Whitepaper Draft — OurOwn Market Research</title>
+<style>
+:root{--bg:#f7f6f3;--panel:#fff;--ink:#1c1b19;--muted:#6b675f;--accent:#0b6b4f;--line:#e4e1da;--code:#f0efea}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+.layout{display:flex;min-height:100vh}
+nav{width:290px;flex:0 0 290px;background:#12211c;color:#dfe7e3;padding:22px 18px;position:sticky;top:0;height:100vh;overflow-y:auto}
+nav .brand{font-size:19px;font-weight:700;color:#fff;letter-spacing:.2px}
+nav .sub{font-size:12px;color:#8fb3a6;margin:4px 0 18px}
+nav a{display:block;color:#c9d8d2;text-decoration:none;padding:7px 10px;border-radius:7px;font-size:14px;margin-bottom:2px}
+nav a:hover{background:#1d332b;color:#fff}
+nav a.active{background:var(--accent);color:#fff}
+main{flex:1;padding:38px 46px 80px;max-width:1000px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:30px 36px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+h1{font-size:30px;margin:0 0 6px;line-height:1.25}
+h2{font-size:22px;margin:34px 0 10px;padding-top:18px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:24px 0 8px}
+h4{font-size:15px;margin:18px 0 6px;color:var(--muted)}
+p,li{font-size:15.5px}
+a{color:var(--accent)}
+blockquote{margin:14px 0;padding:10px 16px;border-left:4px solid var(--accent);background:#eef4f1;color:#33443d;border-radius:0 8px 8px 0}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+th{background:#eef1ee;font-weight:600;white-space:nowrap}
+tr:nth-child(even) td{background:#fafaf8}
+code{background:var(--code);padding:2px 5px;border-radius:4px;font-size:13.5px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+pre{background:#12211c;color:#e7efe9;padding:16px;border-radius:10px;overflow-x:auto}
+pre code{background:none;color:inherit;padding:0}
+hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-top:30px}
+.pager a{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 16px;text-decoration:none;font-size:14px}
+.pager a:hover{border-color:var(--accent)}
+.crumb{color:var(--muted);font-size:13px;margin-bottom:14px}
+@media(max-width:860px){.layout{flex-direction:column}nav{width:100%;flex:none;height:auto;position:static}main{padding:22px 16px 60px}.card{padding:20px 16px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<nav>
+  <div class="brand">OurOwn Market Research</div>
+  <div class="sub">Kano grocery e-commerce · evidence-based validation · Oct 2026</div>
+  <a class="" href="index.html">Research Plan</a>
+  <a class="" href="01-executive-research-summary.html">1. Executive Summary</a>
+  <a class="" href="02-business-and-market-research-report.html">2. Business &amp; Market Report</a>
+  <a class="" href="03-market-sizing-model.html">3. Market Sizing (TAM/SAM/SOM)</a>
+  <a class="" href="04-competitor-intelligence-database.html">4. Competitor Database</a>
+  <a class="" href="05-supplier-research-pack.html">5. Supplier Research Pack</a>
+  <a class="" href="06-unit-economics-workbook-spec.html">6. Unit Economics Workbook</a>
+  <a class="" href="07-swot-tows.html">7. SWOT &amp; TOWS</a>
+  <a class="" href="08-technical-operational-readiness.html">8. Tech &amp; Ops Readiness</a>
+  <a class="" href="09-regulatory-compliance-memo.html">9. Regulatory &amp; Compliance</a>
+  <a class="active" href="10-ourown-whitepaper-draft.html">10. Whitepaper Draft</a>
+  <a class="" href="11-30-day-validation-plan.html">11. 30-Day Validation Plan</a>
+  <a class="" href="12-assumptions-evidence-gap-register.html">12. Assumptions &amp; Gaps Register</a>
+  <a class="" href="13-decision-framework.html">13. Decision Framework</a>
+</nav>
+<main>
+  <div class="crumb">OurOwn research package · 10. Whitepaper Draft</div>
+  <div class="card">
+    <h1 id="ourown-whitepaper-working-draft-v01">OurOwn — Whitepaper (Working Draft v0.1)</h1>
+<p><strong>Version:</strong> 0.1 — working draft for founder review, 30 October 2026
+<strong>Prepared from:</strong> independent desk research + quantitative modelling (see <a href="README.md">README.md</a>)
+<strong>Status:</strong> <em>This is a working draft, not a final investment document.</em> Current capabilities are marked <strong>[Now]</strong>; proposals are <strong>[Planned]</strong>. OurOwn has <strong>no verified customer demand, no signed supplier partnerships, no completed live orders, and no audited technology</strong> as of this date — nothing below should be read as claiming otherwise.</p>
+<hr />
+<h2 id="1-executive-summary">1. Executive summary</h2>
+<p>OurOwn [Planned] is a grocery and everyday-essentials commerce platform for Northern Nigeria, launching in Kano. Nigeria's retail market is ₦25.4 trillion (2025, Euromonitor) but online grocery is only ~US$95 million — under 0.5% — and <strong>no major delivery platform operates in Kano</strong>. OurOwn's thesis: a local-first, Kano-native operator with local sourcing (Dawanau, Singer, Ghadco/Mamuda, NBC Challawa), a narrow high-frequency assortment, batched scheduled delivery and prepaid-first payments can build a profitable grocery business where imported models (Jumia Food, GoLemon, Copia, Twiga) failed. The core risks — order density, thin margins, and unvalidated demand — are addressed by a minimum-basket policy, an 8–10% blended-margin target (vs the originally discussed 5%), a one-polygon launch, and a 30-day validation gate before capital commitment.</p>
+<h2 id="2-the-problem-ourown-seeks-to-solve">2. The problem OurOwn seeks to solve</h2>
+<p>Household grocery shopping in Kano costs time: a bulk stock-up means a half-day market trip, haggling, carrying heavy loads, and price opacity. Neighbourhood kiosks solve convenience but at marked-up, non-comparable prices with limited assortment. Digital options are absent: Glovo, Chowdeck and PricePally do not serve Kano; micro-operators (Sadaraki, KFE) have no catalogue, SLA or scale. Meanwhile 90%+ of FMCG volume moves through informal channels with 4+ margin layers — the digitisation opportunity is real but unproven.</p>
+<h2 id="3-market-context">3. Market context</h2>
+<p>Nigeria 2025: retail ₦25.4trn/$19.0bn; retail e-commerce ₦492bn/$368m (+29%); online food $95m with 87–87.5% cart abandonment (ECDB). Inflation rebased Jan 2025; <strong>Sept 2026 headline 14.63% but food 19.59%</strong> — grocery costs rising faster than wages. FX ≈ ₦1,333–1,347/$. FMCG is 78–95% informal by volume. <em>(Euromonitor/ECDB/NBS, accessed Oct 2026.)</em></p>
+<h2 id="4-the-nigerian-grocery-retail-landscape">4. The Nigerian grocery retail landscape</h2>
+<p>Chain: manufacturer → master distributor → market wholesaler → kiosk → consumer, with modern trade bypassing layers. Open market = 78–85% of volume; supermarkets 2–8%; e-commerce &lt;1%. USDA: ~70% of food shopping informal; open-air markets 72% of retail sales. Manufacturers never publish MOQ or credit — terms are negotiated. Lagos dominates modern trade (&gt;1,400 supermarkets); outside Lagos/Abuja/PH, distribution is wholesale + informal (DALA, 2026).</p>
+<h2 id="5-northern-nigeria-market-opportunity">5. Northern Nigeria market opportunity</h2>
+<p>Kano State: 15.5m (2022 projection), <strong>metro 4.91m</strong> — Nigeria's largest state, top-3 internet market (9.03m subs). MPI 66.3% — mass-market, price-sensitive demand; food-insecurity epicentre (Cadre Harmonisé: 27.2m Crisis-or-worse, Oct–Dec 2025). Yet Kano is a <strong>supply hub</strong>: Dawanau (~42km², 10,000+ shops) and local FMCG plants give same-city sourcing no southern competitor has. <strong>No public Kano e-grocery data exists</strong> — the opportunity must be validated, not assumed.</p>
+<h2 id="6-target-customers-and-their-needs">6. Target customers and their needs</h2>
+<p>Priority order (hypotheses to test, Deliverable 11):
+1. <strong>Households in core urban LGAs</strong> — weekly stock-up, ₦10k–30k baskets, time-poor.
+2. <strong>Institutional buyers</strong> (schools, caterers, offices) — bulk, prepaid, recurring; under-competed, no public evidence anyone serves them well.
+3. <strong>Students/young workers (BUK: 39,979 students)</strong> — small evening baskets, price-sensitive; economics only work with batched campus drops.
+Not targeted at launch: chilled/frozen (no cold chain), ultra-small top-ups (negative contribution).</p>
+<h2 id="7-value-proposition">7. Value proposition</h2>
+<p><strong>"Market prices without the market trip — delivered on a schedule you can count on."</strong> Four pillars, each evidence-backed: (1) local landed cost; (2) fixed, transparent prices with receipts; (3) batched same/next-day windows with named riders; (4) replacement guarantee. Not claimed: cheapest prices (the market's price is public and lower), 10-minute delivery (economically fatal — GoLemon/Blinkit evidence).</p>
+<h2 id="8-initial-owned-inventory-business-model-now-stage-1">8. Initial owned-inventory business model [Now → Stage 1]</h2>
+<p>Buy at wholesale (Ghadco/Mamuda, NBC Challawa, Singer/Dawanau), hold a <strong>narrow 60–100 SKU ambient assortment</strong>, sell via web/WhatsApp/app, deliver in batched windows. Operating rules adopted from the unit-economics model: <strong>minimum basket ₦10,000; free delivery ≥₦15,000, ₦800–₦1,000 below; blended gross margin target 8–10%</strong> (5% rejected — see §18); prepaid-first; one delivery polygon.</p>
+<h2 id="9-supplier-and-distribution-strategy">9. Supplier and distribution strategy</h2>
+<p>Verified counterparties: <strong>Ghadco Nigeria Ltd</strong> (Kano HQ, 5+ categories, 250+ vehicles) and <strong>Mamuda Beverages/Pop Cola</strong> (open distributor invitation, FSSC 22000 plant), plus NBC Challawa and 7-Up Zaria Rd depots; open-market arbitrage daily against Singer/Dawanau. Written price lists, MOQ, and <strong>expiry/returns clauses</strong> required before first purchase order (no manufacturer publishes terms). Full pack: <a href="05-supplier-research-pack.md">05-supplier-research-pack.md</a>.</p>
+<h2 id="10-pricing-and-revenue-model">10. Pricing and revenue model</h2>
+<p>Revenue lines: (1) retail gross margin (8–10% blended target); (2) delivery fee below ₦15,000; (3) [Planned, Stage 3] vendor commissions/commission marketplace; (4) [Planned] placement/promotions; (5) [Planned] subscription pass after density. Pricing rule: re-index weekly against market benchmarks; supplier quote validity ≤7 days.</p>
+<h2 id="11-delivery-and-fulfilment-model">11. Delivery and fulfilment model</h2>
+<p>Outsourced initially (pilot risk reduction): GIG Logistics Kano (3 centres — note Sunday closure), Fez Kano hub (2026), local dispatch riders; <strong>Kwik has retreated to Lagos-only</strong> — do not contract on old assumptions. Batched scheduled windows (≥3 drops/trip target → ₦600/order), confirmation call before dispatch, prepaid-first, failed-delivery reason codes. Metrics tracked from order 1: cost/drop, on-time %, failed %, returns %.</p>
+<h2 id="12-technology-architecture-and-capabilities">12. Technology architecture and capabilities</h2>
+<p>Founder-reported prototype [Now, <strong>unverified</strong>]: registration, location, search, cart, checkout, Paystack test, tracking, admin, inventory import. Production requirements [Planned]: server-side payment verification + reconciliation (webhook ≠ settlement — Paystack 2019; NIBSS May 2026), idempotent order references, RBAC + MFA + audit logs, ASVS Level 2 security, tested backups, low-end Android + 3G-first performance (Android 84.2% share), NDPA-compliant consent/privacy. Full checklist: <a href="08-technical-operational-readiness.md">08-technical-operational-readiness.md</a>.</p>
+<h2 id="13-payment-and-transaction-operations">13. Payment and transaction operations</h2>
+<p>Pilot choice: <strong>Paystack or Monnify</strong>, decided on measured AOV (Paystack: docs, T+1, best marketplace splits; Monnify: cheapest small tickets, T+0 settlement). Paga/PayGate: no public pricing — RFP only. Procedures: sandbox kill-tests, duplicate-payment test, live settlement test to Afrizen's account before launch, daily reconciliation. Settlement ≠ on-screen success.</p>
+<h2 id="14-customer-acquisition-and-retention">14. Customer acquisition and retention</h2>
+<p>Kano channel mix (evidence: SCIMDER 2024 — 51% radio listenership; Meta/Public First 2026; PalmPay referral ₦250): <strong>radio (Hausa, morning/evening) + WhatsApp ordering + referral credits (₦500, gated on first delivered order)</strong>; digital paid as supplement (Nigeria CPMs cheap but cold-traffic CAC ≈ ₦8k–22k uneconomic against ₦10k baskets). Retention via reliability, reorder reminders, and B2B accounts. Subscriptions deferred until cluster density (Chowpass geo-fencing precedent).</p>
+<h2 id="15-future-third-party-vendor-marketplace-planned-gated">15. Future third-party vendor marketplace [Planned — gated]</h2>
+<p>Stage gate before any vendor onboarding: Kano pilot <strong>contribution-positive for 3 consecutive months, 30-day repeat rate ≥35%, fulfilment SLA ≥90%</strong>. Then: Paystack subaccount splits, vendor T&amp;Cs with NAFDAC warranties, DPAs, liability matrix, withholding/VAT mapping. Market lesson: marketplaces survived where owned inventory died (Jumia) — but only with trust infrastructure first.</p>
+<h2 id="16-expansion-strategy">16. Expansion strategy</h2>
+<p>Sequence: <strong>Kano polygon → Kano metro → Kaduna/Jigawa/Katsina → Abuja (only after partner verification)</strong>. Gates: contribution-positive at full cost for 3 months; repeat ≥35%; delivery SLA ≥90%; working capital for 3 months of new-city inventory. Alerzo/Copia rule: expansion killed the profitable two-city business.</p>
+<h2 id="17-financial-assumptions-and-unit-economics">17. Financial assumptions and unit economics</h2>
+<p>Modelled (hypothetical inputs, <a href="06-unit-economics-workbook-spec.md">06-unit-economics-workbook-spec.md</a>): contribution/order at batched ₦600 + ₦800 fee + 10% margin = <strong>+₦175/₦5k, +₦500/₦10k, +₦1,150/₦20k, +₦1,800/₦30k</strong>. Break-even ≈ 1,071–2,500 orders/month vs ₦750k fixed cost. Sales targets decomposed: <strong>₦60m = 500 orders/month @₦10k; ₦100m = 833/month @₦10k</strong> — year-1-to-2 objectives, not launch-month ambitions. ₦100m sales ≠ ₦100m profit: at modelled inputs, ₦3–8m contribution.</p>
+<h2 id="18-risks-and-mitigations">18. Risks and mitigations</h2>
+<p>Top five (full SWOT/TOWS: <a href="07-swot-tows.md">07-swot-tows.md</a>): (1) <strong>density failure</strong> → one polygon, batch windows, min basket, kill rule; (2) <strong>margin arithmetic</strong> → 8–10% blended, fee charged, SKU-level discipline; (3) <strong>unvalidated demand</strong> → 30-day gate before inventory capital; (4) <strong>working capital</strong> → no high-rate debt (Alerzo: ₦5bn → Mareva injunction), staged spend; (5) <strong>trust/COD</strong> → prepaid-first, confirmation calls, replacement guarantee (fraud data: e-commerce is Nigeria's #1 fraud channel, NIBSS 2025).</p>
+<h2 id="19-legal-and-compliance-considerations">19. Legal and compliance considerations</h2>
+<p>Operating under Afrizen Capital pending incorporation of OurOwn Ltd; objects/branding check required. Taxes: NRS (ex-FIRS), CIT 0% possible (small company), VAT 7.5% with <strong>basic food zero-rated</strong>. FCCPC: all fees disclosed pre-payment; promotion registration question open. NDPA registration likely required from launch. NAFDAC: resale of registered goods OK — <strong>repacking would trigger manufacturer registration</strong>. Riders: contractor status turns on control (<em>Olatunji v Uber</em>). Full memo: <a href="09-regulatory-compliance-memo.md">09-regulatory-compliance-memo.md</a>. <em>Professional advice required on all eight questions listed there.</em></p>
+<h2 id="20-implementation-roadmap">20. Implementation roadmap</h2>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Days</th>
+<th>Focus</th>
+<th>Exit gate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 — Validate</td>
+<td>1–30</td>
+<td>Interviews, price collection, supplier/delivery/payment quotes, micro-pilot (<a href="11-30-day-validation-plan.md">11-30-day-validation-plan.md</a>)</td>
+<td>≥8/30 interviews show recent pain; 5+ orders/day for 2 weeks; positive modelled contribution/order on real quotes</td>
+</tr>
+<tr>
+<td>1 — Launch</td>
+<td>31–90</td>
+<td>One polygon, 60–100 ambient SKUs, batched windows, prepaid-first, all 🔴 readiness items</td>
+<td>≥15 orders/day @ ≥₦10k AOV; on-time ≥85%; repeat ≥25%</td>
+</tr>
+<tr>
+<td>2 — Density</td>
+<td>91–180</td>
+<td>Second cluster in metro; B2B accounts; radio+referral scale</td>
+<td>Contribution-positive 3 consecutive months; repeat ≥35%</td>
+</tr>
+<tr>
+<td>3 — Platform</td>
+<td>181+</td>
+<td>Marketplace vendors (gated), Kaduna/Jigawa pilots, subscription pass</td>
+<td>Gates in §15/§16</td>
+</tr>
+</tbody>
+</table>
+<h2 id="21-key-performance-indicators">21. Key performance indicators</h2>
+<p><strong>Daily:</strong> orders, AOV, contribution/order, failed payments, on-time %. <strong>Weekly:</strong> 30-day repeat rate, availability %, failed-delivery %, complaints/order, cash in bank, inventory days, CAC (where measurable). <strong>Monthly:</strong> contribution after fixed cost, supplier price index vs market, cohort retention. Definitions in <a href="11-30-day-validation-plan.md">11-30-day-validation-plan.md</a> §7.</p>
+<h2 id="22-evidence-gaps-and-assumptions">22. Evidence gaps and assumptions</h2>
+<p>The seven mandatory gaps (no customer interviews; no verified TAM; Glovo narrative unverified; suppliers prospective; financial model hypothetical; technology unaudited; Afrizen/OurOwn structure unreviewed) plus all others discovered are catalogued in <a href="12-assumptions-evidence-gap-register.md">12-assumptions-evidence-gap-register.md</a>. <strong>Material unknowns:</strong> Kano AOV, Kano delivery WTP, repeat rates, Ghadco terms, Kano-specific e-grocery demand — each has a named verification task and owner.</p>
+<h2 id="23-references-and-source-notes">23. References and source notes</h2>
+<p>Full source lists appear per deliverable. Principal sources: Euromonitor (2025 retail/e-commerce), ECDB (2025 online food), DALA/NielsenIQ (2026 FMCG/channel), USDA FAS GAIN NI2024-0014 (2024), NBS (CPI Sept 2026, MPI 2022, internet subs Q4 2023, NLSS 2019), citypopulation.de/NPC (2022 projections), TechCabal (GoLemon 29 Jul 2026; Copia 30 Sep 2026), TechCrunch (Chowdeck 11 Aug 2025; Jumia Food 14 Dec 2023), Techeconomy (Glovo 6 Oct 2026), Delivery Hero (16 Jul 2026), ghadconigeria.com, mamudagroup.com, support.paystack.com, monnify.com/pricing, flutterwave.com/ng/pricing, fccpc.gov.ng, ndpc.gov.ng, nafdac.gov.ng, nrs.gov.ng, cac.gov.ng, SCIMDER/Premium Times (Feb 2025), NIBSS/Punch (2026), Paystack status + 2019 post-mortem, OWASP ASVS 5.0. All accessed 28–30 Oct 2026; snippet-only sources flagged in the relevant deliverable.</p>
+<h2 id="24-closing-statement-for-reviewers">24. Closing statement for reviewers</h2>
+<p>This draft is deliberately written to be <strong>challenged</strong>. Where evidence was absent it says so; where the founders' assumptions (5% margin, free delivery, ₦100m target, Glovo narrative) did not survive contact with data, it says that too — with the arithmetic. The next version of this whitepaper should replace hypothetical inputs with real quotes and pilot data from the 30-day plan.</p>
+<hr />
+<p><em>Sources for every claim above are cited in the supporting deliverables. Prepared as independent research; not investment, legal or financial advice.</em></p>
+    <div class="pager"><a href="09-regulatory-compliance-memo.html">← 9. Regulatory &amp; Compliance</a><a href="11-30-day-validation-plan.html">11. 30-Day Validation Plan →</a></div>
+  </div>
+</main>
+</div>
+</body>
+</html>

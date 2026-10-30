@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>6. Unit Economics Workbook — OurOwn Market Research</title>
+<style>
+:root{--bg:#f7f6f3;--panel:#fff;--ink:#1c1b19;--muted:#6b675f;--accent:#0b6b4f;--line:#e4e1da;--code:#f0efea}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+.layout{display:flex;min-height:100vh}
+nav{width:290px;flex:0 0 290px;background:#12211c;color:#dfe7e3;padding:22px 18px;position:sticky;top:0;height:100vh;overflow-y:auto}
+nav .brand{font-size:19px;font-weight:700;color:#fff;letter-spacing:.2px}
+nav .sub{font-size:12px;color:#8fb3a6;margin:4px 0 18px}
+nav a{display:block;color:#c9d8d2;text-decoration:none;padding:7px 10px;border-radius:7px;font-size:14px;margin-bottom:2px}
+nav a:hover{background:#1d332b;color:#fff}
+nav a.active{background:var(--accent);color:#fff}
+main{flex:1;padding:38px 46px 80px;max-width:1000px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:30px 36px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+h1{font-size:30px;margin:0 0 6px;line-height:1.25}
+h2{font-size:22px;margin:34px 0 10px;padding-top:18px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:24px 0 8px}
+h4{font-size:15px;margin:18px 0 6px;color:var(--muted)}
+p,li{font-size:15.5px}
+a{color:var(--accent)}
+blockquote{margin:14px 0;padding:10px 16px;border-left:4px solid var(--accent);background:#eef4f1;color:#33443d;border-radius:0 8px 8px 0}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+th{background:#eef1ee;font-weight:600;white-space:nowrap}
+tr:nth-child(even) td{background:#fafaf8}
+code{background:var(--code);padding:2px 5px;border-radius:4px;font-size:13.5px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+pre{background:#12211c;color:#e7efe9;padding:16px;border-radius:10px;overflow-x:auto}
+pre code{background:none;color:inherit;padding:0}
+hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-top:30px}
+.pager a{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 16px;text-decoration:none;font-size:14px}
+.pager a:hover{border-color:var(--accent)}
+.crumb{color:var(--muted);font-size:13px;margin-bottom:14px}
+@media(max-width:860px){.layout{flex-direction:column}nav{width:100%;flex:none;height:auto;position:static}main{padding:22px 16px 60px}.card{padding:20px 16px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<nav>
+  <div class="brand">OurOwn Market Research</div>
+  <div class="sub">Kano grocery e-commerce · evidence-based validation · Oct 2026</div>
+  <a class="" href="index.html">Research Plan</a>
+  <a class="" href="01-executive-research-summary.html">1. Executive Summary</a>
+  <a class="" href="02-business-and-market-research-report.html">2. Business &amp; Market Report</a>
+  <a class="" href="03-market-sizing-model.html">3. Market Sizing (TAM/SAM/SOM)</a>
+  <a class="" href="04-competitor-intelligence-database.html">4. Competitor Database</a>
+  <a class="" href="05-supplier-research-pack.html">5. Supplier Research Pack</a>
+  <a class="active" href="06-unit-economics-workbook-spec.html">6. Unit Economics Workbook</a>
+  <a class="" href="07-swot-tows.html">7. SWOT &amp; TOWS</a>
+  <a class="" href="08-technical-operational-readiness.html">8. Tech &amp; Ops Readiness</a>
+  <a class="" href="09-regulatory-compliance-memo.html">9. Regulatory &amp; Compliance</a>
+  <a class="" href="10-ourown-whitepaper-draft.html">10. Whitepaper Draft</a>
+  <a class="" href="11-30-day-validation-plan.html">11. 30-Day Validation Plan</a>
+  <a class="" href="12-assumptions-evidence-gap-register.html">12. Assumptions &amp; Gaps Register</a>
+  <a class="" href="13-decision-framework.html">13. Decision Framework</a>
+</nav>
+<main>
+  <div class="crumb">OurOwn research package · 6. Unit Economics Workbook</div>
+  <div class="card">
+    <h1 id="deliverable-6-financial-unit-economics-workbook-specification">Deliverable 6 — Financial &amp; Unit-Economics Workbook Specification</h1>
+<p><strong>Spreadsheet-ready tables.</strong> All <strong>hypothetical inputs are labelled [H]</strong> and must be replaced with quotations and observed data. Verified published figures are <strong>[V]</strong> with source. <strong>No output here is a forecast.</strong></p>
+<hr />
+<h2 id="0-sheet-0-input-register-replace-before-trusting-any-output">0. Sheet 0 — Input register (replace before trusting any output)</h2>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Base value used here</th>
+<th>Type</th>
+<th>How to verify</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Payment processing</td>
+<td>1.5% + ₦100, capped ₦2,000 per transaction</td>
+<td><strong>[V]</strong> Paystack published Nigeria local rate (support.paystack.com, Oct 2026)</td>
+<td>Compare live invoices from chosen PSP</td>
+</tr>
+<tr>
+<td>Packaging per order</td>
+<td>₦250</td>
+<td><strong>[H]</strong></td>
+<td>Quote bag/box suppliers (Kano)</td>
+</tr>
+<tr>
+<td>Delivery cost, single drop</td>
+<td>₦1,200</td>
+<td><strong>[H]</strong> anchored on observed Nigerian band ₦1,000–₦1,700</td>
+<td>Mystery-shop 3PL/rider quotes (Deliverable 11, A5)</td>
+</tr>
+<tr>
+<td>Delivery cost, batched (3+ drops/trip)</td>
+<td>₦600</td>
+<td><strong>[H]</strong> derived from ₦350–600 variable floor</td>
+<td>Rider interviews + trip timing</td>
+</tr>
+<tr>
+<td>Delivery fee charged</td>
+<td>₦0 / ₦800 / ₦1,000 scenarios</td>
+<td><strong>[H]</strong></td>
+<td>A/B pilot (Deliverable 11, A6)</td>
+</tr>
+<tr>
+<td>Losses (spoilage + returns + failed delivery)</td>
+<td>2% of revenue</td>
+<td><strong>[H]</strong></td>
+<td>Track from order 1; COD rejection assumed 10–20% prepaid, 20–30% COD</td>
+</tr>
+<tr>
+<td>Discounts/promotions</td>
+<td>0% base; 3% promo scenario</td>
+<td><strong>[H]</strong></td>
+<td>Actual promo calendar</td>
+</tr>
+<tr>
+<td>Blended gross margin</td>
+<td>5% / 8% / 10% / 12% / 15% scenarios</td>
+<td><strong>[H]</strong> founders' 5% is unvalidated</td>
+<td>SKU margin table (Sheet 1)</td>
+</tr>
+<tr>
+<td>Fixed opex (pilot)</td>
+<td>₦750,000/month illustrative</td>
+<td><strong>[H]</strong> real payroll/rent quotes required</td>
+<td>Actual commitments</td>
+</tr>
+<tr>
+<td>Operating days</td>
+<td>365 (delivery 7 days) / 300 (6 days/week)</td>
+<td><strong>[H]</strong> GIG Kano is closed Sundays — if using such 3PL, 300</td>
+<td>Policy decision</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-sheet-1-product-cost-selling-price-sku-level">1. Sheet 1 — Product cost &amp; selling price (SKU level)</h2>
+<p>Columns: <code>SKU | Category | Unit | Supplier | Carton price | Units/carton | Unit cost | Transport to store (₦/unit) | Landed cost | Selling price | Gross profit ₦ | Gross margin % | Market benchmark price (Singer/Dawanau) | Price index vs market | NAFDAC no. | Expiry date | Days-to-expiry at receipt | Reorder?</code></p>
+<p>Rule: <code>Landed cost = (carton price + transport + breakage allowance) ÷ units/carton</code>. Flag any SKU where <code>Gross margin% &lt; 8%</code> or <code>Price index &gt; 1.10</code> (dearer than the market).</p>
+<h2 id="2-sheet-2-basket-level-profitability-the-model-behind-this-deliverable">2. Sheet 2 — Basket-level profitability (the model behind this deliverable)</h2>
+<p>Formula chain per order:</p>
+<pre><code>Gross profit      = basket × margin%
+Payment cost      = MIN(basket × 1.5% + ₦100, ₦2,000)
+Packaging         = ₦250
+Delivery cost     = ₦1,200 single-drop  |  ₦600 batched
+Discounts         = basket × promo rate (0 base)
+Losses            = basket × 2%
+Delivery fee in   = ₦0 | ₦800 | ₦1,000
+Contribution      = gross profit + fee − payment − packaging − delivery − discounts − losses
+</code></pre>
+<h3 id="table-2a-single-drop-delivery-1200-no-delivery-fee-free-delivery-embedded">Table 2a — Single-drop delivery (₦1,200), <strong>no delivery fee</strong> (free delivery embedded)</h3>
+<table>
+<thead>
+<tr>
+<th>Basket</th>
+<th>5%</th>
+<th>8%</th>
+<th>10%</th>
+<th>12%</th>
+<th>15%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>₦5,000</td>
+<td>−1,475</td>
+<td>−1,325</td>
+<td>−1,225</td>
+<td>−1,125</td>
+<td>−975</td>
+</tr>
+<tr>
+<td>₦10,000</td>
+<td>−1,400</td>
+<td>−1,100</td>
+<td>−900</td>
+<td>−700</td>
+<td>−400</td>
+</tr>
+<tr>
+<td>₦20,000</td>
+<td>−1,250</td>
+<td>−650</td>
+<td>−250</td>
+<td><strong>+150</strong></td>
+<td>+750</td>
+</tr>
+<tr>
+<td>₦30,000</td>
+<td>−1,100</td>
+<td>−200</td>
+<td><strong>+400</strong></td>
+<td>+1,000</td>
+<td>+1,900</td>
+</tr>
+</tbody>
+</table>
+<h3 id="table-2b-single-drop-delivery-1200-1000-fee-collected">Table 2b — Single-drop delivery (₦1,200), <strong>₦1,000 fee collected</strong></h3>
+<table>
+<thead>
+<tr>
+<th>Basket</th>
+<th>5%</th>
+<th>8%</th>
+<th>10%</th>
+<th>12%</th>
+<th>15%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>₦5,000</td>
+<td>−475</td>
+<td>−325</td>
+<td>−225</td>
+<td>−125</td>
+<td>+25</td>
+</tr>
+<tr>
+<td>₦10,000</td>
+<td>−400</td>
+<td>−100</td>
+<td><strong>+100</strong></td>
+<td>+300</td>
+<td>+600</td>
+</tr>
+<tr>
+<td>₦20,000</td>
+<td>−250</td>
+<td><strong>+350</strong></td>
+<td>+750</td>
+<td>+1,150</td>
+<td>+1,750</td>
+</tr>
+<tr>
+<td>₦30,000</td>
+<td>−100</td>
+<td><strong>+800</strong></td>
+<td>+1,400</td>
+<td>+2,000</td>
+<td>+2,900</td>
+</tr>
+</tbody>
+</table>
+<h3 id="table-2c-batched-delivery-600-800-fee-recommended-operating-model">Table 2c — <strong>Batched delivery (₦600), ₦800 fee</strong> (recommended operating model)</h3>
+<table>
+<thead>
+<tr>
+<th>Basket</th>
+<th>5%</th>
+<th>8%</th>
+<th>10%</th>
+<th>12%</th>
+<th>15%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>₦5,000</td>
+<td>−75</td>
+<td>+75</td>
+<td>+175</td>
+<td>+275</td>
+<td>+425</td>
+</tr>
+<tr>
+<td>₦10,000</td>
+<td>0</td>
+<td><strong>+300</strong></td>
+<td>+500</td>
+<td>+700</td>
+<td>+1,000</td>
+</tr>
+<tr>
+<td>₦20,000</td>
+<td>+150</td>
+<td>+750</td>
+<td>+1,150</td>
+<td>+1,550</td>
+<td>+2,150</td>
+</tr>
+<tr>
+<td>₦30,000</td>
+<td>+300</td>
+<td>+1,200</td>
+<td>+1,800</td>
+<td>+2,400</td>
+<td>+3,300</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Reading of the model:</strong>
+1. <strong>At the founders' 5% margin, delivery is the whole problem</strong>: only batched delivery + a fee makes even ₦5,000–₦10,000 baskets work, and contribution (−75 to +300) cannot fund fixed costs at pilot volumes.
+2. <strong>Break-even zone: ≥8–10% blended margin, ≥₦10,000 basket, batched delivery, fee charged</strong> → ₦300–₦700 contribution/order.
+3. Free-delivery-only (Table 2a) requires baskets ≥₦20,000 at ≥12% — viable only for stock-up missions, hence <strong>minimum basket policy</strong>.
+4. Never present Table 2b/2c outputs as forecasts — inputs are hypothetical.</p>
+<h2 id="3-sheet-3-delivery-pricing-strategies-compared">3. Sheet 3 — Delivery pricing strategies compared</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Strategy 1: separate fee</th>
+<th>Strategy 2: embedded in price</th>
+<th>Strategy 3: free above minimum basket</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mechanics</td>
+<td>₦800–₦1,000 fee shown at checkout</td>
+<td>+10–12% on every price to recover ₦1,200</td>
+<td>Fee ₦0 if basket ≥ ₦15,000; ₦1,000 below</td>
+</tr>
+<tr>
+<td>Contribution effect (₦10k basket, 10%)</td>
+<td>+₦100 with fee (Table 2b)</td>
+<td>Breakeven only if price uplift ≈ cost; but <strong>prices now ~12% above market</strong> → conversion loss</td>
+<td>Neutral on small orders; funds fee from ₦1.5k gross profit at ₦15k</td>
+</tr>
+<tr>
+<td>Trust/compliance</td>
+<td>✅ transparent — matches FCCPC "all disclosures before payment"</td>
+<td>❌ undisclosed charge = trust &amp; regulatory risk if discovered</td>
+<td>✅ clear rule, strong conversion lever (Chowdeck's ₦3,000 bar)</td>
+</tr>
+<tr>
+<td>Competitive effect</td>
+<td>Fee is visible friction</td>
+<td>Visibly dearer than kiosk/market → kills price comparison</td>
+<td>Rewards bulk — aligns with economics</td>
+</tr>
+<tr>
+<td>Verdict</td>
+<td><strong>Adopt for orders &lt; ₦15,000</strong></td>
+<td><strong>Reject</strong> while customers price-compare</td>
+<td><strong>Adopt for orders ≥ ₦15,000</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recommended hybrid:</strong> minimum basket <strong>₦10,000</strong>; delivery <strong>included free at ≥₦15,000</strong>, <strong>₦800–₦1,000 below</strong>; scheduled batch windows. Never call delivery "free" if it is hidden in an above-market price — say "free delivery on orders of ₦15,000+".</p>
+<h2 id="4-sheet-4-payment-provider-comparison-weighted-scorecard">4. Sheet 4 — Payment provider comparison &amp; weighted scorecard</h2>
+<p><strong>Published fees (Oct 2026, official pages):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Provider</th>
+<th>Local card/transfer</th>
+<th>Intl</th>
+<th>Virtual account</th>
+<th>Settlement</th>
+<th>Splits/marketplace</th>
+<th>Public docs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Paystack</td>
+<td>1.5% + ₦100 (cap ₦2,000; ₦100 waived &lt;₦2,500)</td>
+<td>3.9% + ₦100</td>
+<td>1% cap ₦300</td>
+<td><strong>T+1 contractual</strong></td>
+<td>Multi-split, delayed settlement (best documented)</td>
+<td>Extensive</td>
+</tr>
+<tr>
+<td>Flutterwave</td>
+<td>2% (1.4+0.6) <strong>+ 7.5% VAT</strong> ≈ 2.15%</td>
+<td>4.8%</td>
+<td>yes</td>
+<td>next day</td>
+<td>Subaccounts; merchant bears chargebacks</td>
+<td>Strong</td>
+</tr>
+<tr>
+<td>Monnify</td>
+<td>1.5% cap ₦2,000</td>
+<td>4%</td>
+<td>₦500 flat (confirm)</td>
+<td><strong>T+0 by 22:00 + 3 express/day</strong></td>
+<td>max 5 splits, manual enablement + indemnity</td>
+<td>Good</td>
+</tr>
+<tr>
+<td>Paga</td>
+<td><strong>not published</strong></td>
+<td>—</td>
+<td>Paga account numbers</td>
+<td>not published</td>
+<td>none documented</td>
+<td>Dated (SHA-512, IP whitelisting)</td>
+</tr>
+<tr>
+<td>PayGate (Upperlink)</td>
+<td><strong>not published</strong></td>
+<td>USD settlement offered</td>
+<td>—</td>
+<td>not published</td>
+<td>none found</td>
+<td><strong>none public</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Weighted scorecard (weights = founders' priorities; scores 1–5, evidence-based, October 2026):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Criterion (weight)</th>
+<th>Paystack</th>
+<th>Flutterwave</th>
+<th>Monnify</th>
+<th>Paga</th>
+<th>PayGate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cost at ₦8k–₦20k baskets (25%)</td>
+<td>3</td>
+<td>3</td>
+<td><strong>5</strong></td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Settlement speed / cashflow (20%)</td>
+<td>3</td>
+<td>4</td>
+<td><strong>5</strong></td>
+<td>2</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Docs &amp; integration quality (15%)</td>
+<td><strong>5</strong></td>
+<td>4</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Marketplace readiness Stage 3 (15%)</td>
+<td><strong>5</strong></td>
+<td>4</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Reconciliation/virtual accounts (10%)</td>
+<td><strong>5</strong></td>
+<td>4</td>
+<td>4</td>
+<td>3</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Transparency of published terms (10%)</td>
+<td><strong>5</strong></td>
+<td><strong>5</strong></td>
+<td><strong>5</strong></td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Support/reliability reputation (5%)</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>Weighted total</strong></td>
+<td><strong>4.10</strong></td>
+<td><strong>3.75</strong></td>
+<td><strong>4.30</strong></td>
+<td>2.05</td>
+<td>1.35</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recommendation (criterion-driven, not popularity):</strong> <strong>Pilot = Paystack OR Monnify</strong>, decided by measured AOV: AOV &lt;₦6,000 → Monnify (no ₦100 flat fee); AOV ≥₦6,000 and Stage-3 marketplace plans → Paystack. Keep Flutterwave as redundancy. <strong>Paga and PayGate: RFP only — request written fee schedule, settlement SLA, API docs before any evaluation.</strong> Never claim any provider is "best" beyond these criteria.</p>
+<p><strong>Sandbox/live testing procedure:</strong> (1) sandbox: charge every method (card, transfer, USSD, VA), kill webhooks deliberately, confirm server-side verify recovers; (2) duplicate-payment test: same reference retried → single fulfilment; (3) refund test on a live ₦2,000 order → confirm days-to-refund; (4) <strong>settlement test</strong>: ₦5,000 live charge → confirm T+1 credit on Afrizen's bank statement and reconcile against dashboard; (5) run for ≥2 weeks including a weekend.</p>
+<h2 id="5-sheet-5-monthly-fixed-operating-expenses-pilot-illustrative-h">5. Sheet 5 — Monthly fixed operating expenses (pilot, illustrative [H])</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>₦/month</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 staff (ops + customer service)</td>
+<td>300,000</td>
+<td>actual payroll quotes required; federal min wage ₦70,000</td>
+</tr>
+<tr>
+<td>Store/pick space rent + service charge</td>
+<td>100,000</td>
+<td>Kano location-dependent; + LGA tenement</td>
+</tr>
+<tr>
+<td>Rider/delivery partnership (prepaid float)</td>
+<td>150,000</td>
+<td>if not per-drop</td>
+</tr>
+<tr>
+<td>Software/tools/PSP monthly costs</td>
+<td>25,000</td>
+<td>hosting, SMS/WhatsApp, analytics</td>
+</tr>
+<tr>
+<td>Utilities/backup power</td>
+<td>50,000</td>
+<td>grid unreliability</td>
+</tr>
+<tr>
+<td>Marketing (radio spot + WhatsApp)</td>
+<td>75,000</td>
+<td>SCIMDER: radio is Kano's mass channel</td>
+</tr>
+<tr>
+<td>Contingency</td>
+<td>50,000</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>₦750,000</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Break-even:</strong> at contribution ₦300/order → <strong>2,500 orders/month (~83/day)</strong>; at ₦700/order → <strong>1,071/month (~36/day)</strong>. <em>This is why batching + minimum basket + 8–10% margin are non-negotiable.</em></p>
+<h2 id="6-sheet-6-sales-scenarios-break-even-deliverable-2-area-g-restated">6. Sheet 6 — Sales scenarios &amp; break-even (Deliverable 2, Area G restated)</h2>
+<table>
+<thead>
+<tr>
+<th>Target</th>
+<th>AOV</th>
+<th>Orders/yr</th>
+<th>Orders/mo</th>
+<th>Orders/day (300 op. days)</th>
+<th>Gross profit @10%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>₦60m</td>
+<td>5,000</td>
+<td>12,000</td>
+<td>1,000</td>
+<td>40</td>
+<td>₦6.0m</td>
+</tr>
+<tr>
+<td>₦60m</td>
+<td>10,000</td>
+<td>6,000</td>
+<td>500</td>
+<td>20</td>
+<td>₦6.0m</td>
+</tr>
+<tr>
+<td>₦60m</td>
+<td>15,000</td>
+<td>4,000</td>
+<td>333</td>
+<td>13</td>
+<td>₦6.0m</td>
+</tr>
+<tr>
+<td>₦100m</td>
+<td>10,000</td>
+<td>10,000</td>
+<td>833</td>
+<td>33</td>
+<td>₦10.0m</td>
+</tr>
+<tr>
+<td>₦100m</td>
+<td>15,000</td>
+<td>6,667</td>
+<td>556</td>
+<td>22</td>
+<td>₦10.0m</td>
+</tr>
+<tr>
+<td>₦100m</td>
+<td>20,000</td>
+<td>5,000</td>
+<td>417</td>
+<td>17</td>
+<td>₦10.0m</td>
+</tr>
+</tbody>
+</table>
+<p>Variable costs per Tables 2a–c consume most of gross profit; <strong>₦100m sales ≈ ₦3–8m contribution at modelled inputs — NOT ₦100m profit.</strong></p>
+<h2 id="7-sheet-7-working-capital-monthly-cash-flow-template">7. Sheet 7 — Working capital &amp; monthly cash flow (template)</h2>
+<p>Rows: Opening cash · Inventory purchases (prepay) · Delivery top-ups · PSP settlement received (T+1) · Payroll · Rent · Marketing · Net cash flow · Closing cash · <strong>Days of inventory cover · Cash tied up in stock</strong>.
+Key rules: (a) T+1 settlement means yesterday's sales fund today's stock; (b) never let inventory cover exceed the cash runway; (c) Alerzo warning — no high-rate naira debt for inventory.</p>
+<h2 id="8-sheet-8-refunds-returns-spoilage-log">8. Sheet 8 — Refunds, returns, spoilage log</h2>
+<p><code>Order ID | Reason (wrong/expired/short-delivery/refused/COD-failed) | Value | Recoverable Y/N | Credit given | Rider/supplier responsible | % of revenue (target &lt;2%)</code></p>
+<h2 id="9-sheet-9-discount-promotion-tracker">9. Sheet 9 — Discount &amp; promotion tracker</h2>
+<p><code>Campaign | Dates | Discount value | Uplift in orders (vs baseline) | CAC effect | Contribution after promo</code> — because promotions must be evaluated on <strong>incremental contribution</strong>, not gross sales.</p>
+<h2 id="10-sheet-10-dashboard-definitions-dailyweekly-review">10. Sheet 10 — Dashboard definitions (daily/weekly review)</h2>
+<p>Orders/day · AOV · Contribution/order · Repeat-purchase rate (30-day) · On-time delivery % · Availability % (SKUs in stock at order time) · Failed-delivery % · Complaints/order · Cash in bank · Inventory days. (Definitions and cadence in Deliverable 11 §7.)</p>
+    <div class="pager"><a href="05-supplier-research-pack.html">← 5. Supplier Research Pack</a><a href="07-swot-tows.html">7. SWOT &amp; TOWS →</a></div>
+  </div>
+</main>
+</div>
+</body>
+</html>

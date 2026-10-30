@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>12. Assumptions &amp; Gaps Register — OurOwn Market Research</title>
+<style>
+:root{--bg:#f7f6f3;--panel:#fff;--ink:#1c1b19;--muted:#6b675f;--accent:#0b6b4f;--line:#e4e1da;--code:#f0efea}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+.layout{display:flex;min-height:100vh}
+nav{width:290px;flex:0 0 290px;background:#12211c;color:#dfe7e3;padding:22px 18px;position:sticky;top:0;height:100vh;overflow-y:auto}
+nav .brand{font-size:19px;font-weight:700;color:#fff;letter-spacing:.2px}
+nav .sub{font-size:12px;color:#8fb3a6;margin:4px 0 18px}
+nav a{display:block;color:#c9d8d2;text-decoration:none;padding:7px 10px;border-radius:7px;font-size:14px;margin-bottom:2px}
+nav a:hover{background:#1d332b;color:#fff}
+nav a.active{background:var(--accent);color:#fff}
+main{flex:1;padding:38px 46px 80px;max-width:1000px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:30px 36px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+h1{font-size:30px;margin:0 0 6px;line-height:1.25}
+h2{font-size:22px;margin:34px 0 10px;padding-top:18px;border-top:1px solid var(--line)}
+h3{font-size:17px;margin:24px 0 8px}
+h4{font-size:15px;margin:18px 0 6px;color:var(--muted)}
+p,li{font-size:15.5px}
+a{color:var(--accent)}
+blockquote{margin:14px 0;padding:10px 16px;border-left:4px solid var(--accent);background:#eef4f1;color:#33443d;border-radius:0 8px 8px 0}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+th{background:#eef1ee;font-weight:600;white-space:nowrap}
+tr:nth-child(even) td{background:#fafaf8}
+code{background:var(--code);padding:2px 5px;border-radius:4px;font-size:13.5px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+pre{background:#12211c;color:#e7efe9;padding:16px;border-radius:10px;overflow-x:auto}
+pre code{background:none;color:inherit;padding:0}
+hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-top:30px}
+.pager a{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 16px;text-decoration:none;font-size:14px}
+.pager a:hover{border-color:var(--accent)}
+.crumb{color:var(--muted);font-size:13px;margin-bottom:14px}
+@media(max-width:860px){.layout{flex-direction:column}nav{width:100%;flex:none;height:auto;position:static}main{padding:22px 16px 60px}.card{padding:20px 16px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<nav>
+  <div class="brand">OurOwn Market Research</div>
+  <div class="sub">Kano grocery e-commerce · evidence-based validation · Oct 2026</div>
+  <a class="" href="index.html">Research Plan</a>
+  <a class="" href="01-executive-research-summary.html">1. Executive Summary</a>
+  <a class="" href="02-business-and-market-research-report.html">2. Business &amp; Market Report</a>
+  <a class="" href="03-market-sizing-model.html">3. Market Sizing (TAM/SAM/SOM)</a>
+  <a class="" href="04-competitor-intelligence-database.html">4. Competitor Database</a>
+  <a class="" href="05-supplier-research-pack.html">5. Supplier Research Pack</a>
+  <a class="" href="06-unit-economics-workbook-spec.html">6. Unit Economics Workbook</a>
+  <a class="" href="07-swot-tows.html">7. SWOT &amp; TOWS</a>
+  <a class="" href="08-technical-operational-readiness.html">8. Tech &amp; Ops Readiness</a>
+  <a class="" href="09-regulatory-compliance-memo.html">9. Regulatory &amp; Compliance</a>
+  <a class="" href="10-ourown-whitepaper-draft.html">10. Whitepaper Draft</a>
+  <a class="" href="11-30-day-validation-plan.html">11. 30-Day Validation Plan</a>
+  <a class="active" href="12-assumptions-evidence-gap-register.html">12. Assumptions &amp; Gaps Register</a>
+  <a class="" href="13-decision-framework.html">13. Decision Framework</a>
+</nav>
+<main>
+  <div class="crumb">OurOwn research package · 12. Assumptions &amp; Gaps Register</div>
+  <div class="card">
+    <h1 id="deliverable-12-assumptions-evidence-gap-register-evidence-register">Deliverable 12 — Assumptions, Evidence-Gap Register &amp; Evidence Register</h1>
+<p><strong>Columns required:</strong> assumption/question · why it matters · current evidence · source · confidence · impact if wrong · how to verify · who verifies · deadline/stage · decision blocked.</p>
+<p>Confidence scale: <strong>High</strong> (authoritative, relevant) · <strong>Medium</strong> (credible, meaningful limits) · <strong>Low</strong> (indirect/weak) · <strong>Unverified</strong> (not independently established).</p>
+<hr />
+<h2 id="part-a-mandatory-evidence-gaps-the-seven-given-in-the-brief-discovered-gaps">Part A — Mandatory evidence gaps (the seven given in the brief) + discovered gaps</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Assumption or unanswered question</th>
+<th>Why it matters</th>
+<th>Current evidence</th>
+<th>Source</th>
+<th>Conf.</th>
+<th>Impact if wrong</th>
+<th>How to verify</th>
+<th>Who</th>
+<th>Deadline</th>
+<th>Decision blocked</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Customer demand exists in Kano</strong></td>
+<td>The entire investment</td>
+<td>None — no interviews, no live orders, no public Kano e-grocery data anywhere</td>
+<td>Research finding (all streams)</td>
+<td>Unverified</td>
+<td>Total loss of pilot capital</td>
+<td>30-interview study + 100-order micro-pilot (Deliverable 11 A1/A8)</td>
+<td>Founders</td>
+<td>Days 1–30</td>
+<td>Go/no-go, all hiring, inventory spend</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>TAM/SAM/SOM</strong></td>
+<td>Sizing credibility</td>
+<td>Bottom-up model only: TAM ₦270–590bn (Low confidence), SOM ₦30–144m</td>
+<td>Deliverable 3</td>
+<td>Low</td>
+<td>Over/under-investment</td>
+<td>Pilot AOV/frequency data; NBS NLSS 2022/23 state tables; ward-level enumeration</td>
+<td>Analyst + NBS data</td>
+<td>Days 30+</td>
+<td>Investor/founder capital decisions</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Glovo narrative</strong> ("began in Lagos, expanded to Abuja, multi-category")</td>
+<td>Competitive planning</td>
+<td>Partially corrected: entered Nigeria <strong>March 2021 Lagos</strong>, then Abuja, Ibadan, PH (Sep 2024); <strong>not in Kano</strong>; parent Delivery Hero → Uber deal (Jul 2026); Jumia/Bolt Food exits confirmed</td>
+<td>Techeconomy 6 Oct 2026; glovoapp.com /kano 404; Delivery Hero 16 Jul 2026; TechCrunch 14 Dec 2023</td>
+<td>High (current status)</td>
+<td>Misjudged threat timing</td>
+<td>Monitor Uber/Glovo Kano launch; Chowdeck city list</td>
+<td>Founders</td>
+<td>Ongoing</td>
+<td>Competitive strategy, expansion urgency</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Supplier relationships (Ghadco, Pop Cola)</strong></td>
+<td>Assortment &amp; margin</td>
+<td>Identities <strong>verified</strong> (Ghadco Nigeria Ltd; Mamuda Beverages); <strong>no commercial terms, no interest, no agreement</strong> exists</td>
+<td>ghadconigeria.com; mamudagroup.com (read Oct 2026)</td>
+<td>High (identity) / Unverified (terms)</td>
+<td>Assortment/margin assumptions collapse</td>
+<td>Meetings + written price lists (Deliverable 11 A3)</td>
+<td>Founders</td>
+<td>Days 2–7</td>
+<td>First purchase order, pricing</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>5% gross margin, ₦60m/₦100m sales, ₦1,500–1,700 delivery, discounts/rewards</strong></td>
+<td>Core economics</td>
+<td>Modelled: 5% is negative-contribution except narrow cases; ₦60m = 500–1,000 orders/mo; ₦1,500–1,700 sits inside observed Nigerian band but has zero Kano data</td>
+<td>Deliverable 6 model; Jumia/Fez/Kwik fee evidence</td>
+<td>Medium (model) / Low (Kano fees)</td>
+<td>Loss-making operations; unrealistic targets</td>
+<td>Real quotes + A/B fee test + observed AOV</td>
+<td>Founders + analyst</td>
+<td>Days 30 (A10)</td>
+<td>Pricing policy, target-setting</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Technology is production-ready</strong></td>
+<td>Launch safety</td>
+<td>Founder-reported features only; <strong>no code audit, security, load or settlement test</strong></td>
+<td>Brief §2.5</td>
+<td>Unverified</td>
+<td>Payment loss, data breach, trust collapse at launch</td>
+<td>10 acceptance tests + independent review (Deliverable 8 §4)</td>
+<td>External tech reviewer</td>
+<td>Days 8–21</td>
+<td>Permission to accept real orders</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Afrizen Capital shell adequate; eventual OurOwn entity</strong></td>
+<td>Contracts, liability, tax, PSP</td>
+<td>Not reviewed; objects clause unknown; CAC annual-returns status unknown</td>
+<td>CAC check required</td>
+<td>Unverified</td>
+<td>Contract invalidity, onboarding failure, personal liability</td>
+<td>Lawyer review + CAC portal check (Deliverable 9 §10 Q1)</td>
+<td>Lawyer/company secretary</td>
+<td>Days 1–14</td>
+<td>Signing any contract, PSP live mode</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Delivery partner covering Kano+Abuja exists (founder claim)</strong></td>
+<td>Expansion path &amp; pilot logistics</td>
+<td><strong>Unverified claim</strong>; Kwik explicitly Lagos-only; GIG Kano exists (3 centres); Fez Kano hub 2026 (snippet)</td>
+<td>kwik.delivery; giglogistics.com; fez (snippet)</td>
+<td>Low</td>
+<td>Wrong logistics plan, cost overruns</td>
+<td>Mystery-shop quotes (Deliverable 11 A5)</td>
+<td>Ops lead</td>
+<td>Days 8–12</td>
+<td>Delivery model, Abuja plans</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>Kano AOV / basket size</strong></td>
+<td>Every unit-economics output</td>
+<td>No published figure exists anywhere (ECDB/Statista paywalled)</td>
+<td>Research finding</td>
+<td>Unverified</td>
+<td>Wrong break-even math</td>
+<td>Pilot data (A8)</td>
+<td>Founders</td>
+<td>Day 30</td>
+<td>Minimum basket, fee, targets</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Willingness to pay delivery fees in Kano</strong></td>
+<td>Fee strategy</td>
+<td>Zero Kano data; national band ₦1,400–₦1,700 entry; Chowdeck ₦3,000 free bar</td>
+<td>Jumia VendorHub snippet; chowdeck.com</td>
+<td>Low</td>
+<td>Conversion collapse or margin bleed</td>
+<td>A/B fee test (A6/pilot)</td>
+<td>Founders</td>
+<td>Day 30</td>
+<td>Delivery pricing (Deliverable 6 §3)</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>Repayment/prepayment acceptance</strong> (prepaid-first policy)</td>
+<td>COD cost control</td>
+<td>~23% of NG online sales in cash; 12% trust mobile payment over COD (single study, snippet); WhatsApp transfer-before-delivery is established norm</td>
+<td>PaymentsCMI 2024 (404); Northumbria 2026 (snippet); BiteExpress</td>
+<td>Low</td>
+<td>High failed-delivery losses (20–30% claimed)</td>
+<td>Ask in interviews; observe pilot payment mix</td>
+<td>Founders</td>
+<td>Days 1–30</td>
+<td>Payment policy</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>Repacking/own-label scope</strong></td>
+<td>NAFDAC manufacturer regime</td>
+<td>Unknown whether founders intend repacking; regs not machine-readable</td>
+<td>nafdac.gov.ng; Pre-packaged Food Regs 2022 (snippet)</td>
+<td>Unverified</td>
+<td>Registration enforcement risk</td>
+<td>Written NAFDAC-consultant/lawyer answer</td>
+<td>Lawyer</td>
+<td>Before first sale</td>
+<td>Assortment design (bulk sales?)</td>
+</tr>
+<tr>
+<td>13</td>
+<td><strong>Rider classification (contractor vs employee)</strong></td>
+<td>Labour liability</td>
+<td>NICN <em>Olatunji v Uber</em> (2017) declined employment — control test; our operating model unknown</td>
+<td>Manifield analysis (2026)</td>
+<td>Medium</td>
+<td>PAYE/pension/dismissal exposure</td>
+<td>Lawyer review of actual operating practices</td>
+<td>Lawyer</td>
+<td>Before hiring/dispatch</td>
+<td>Rider engagement model</td>
+</tr>
+<tr>
+<td>14</td>
+<td><strong>NDPC registration threshold</strong></td>
+<td>Data compliance</td>
+<td>&gt;200 subjects/6 months widely summarised; <strong>exact text UNVERIFIED (PDF)</strong>; GAID audit regime confirmed</td>
+<td>ndpc.gov.ng; Legal500 21 Jan 2026</td>
+<td>Medium</td>
+<td>Penalties up to ₦10m/2% revenue</td>
+<td>Read gazetted guidance; engage licensed DPCO</td>
+<td>DPO/lawyer</td>
+<td>Before launch</td>
+<td>Compliance budget, privacy design</td>
+</tr>
+<tr>
+<td>15</td>
+<td><strong>VAT treatment of mixed basket</strong></td>
+<td>Pricing/tax</td>
+<td>Basic food items zero-rated; standard rate 7.5%</td>
+<td>PwC (May 2026)</td>
+<td>High (rule) / Unverified (SKU mapping)</td>
+<td>Over/under-charging tax</td>
+<td>SKU-by-SKU tax mapping</td>
+<td>Tax adviser</td>
+<td>Days 1–14</td>
+<td>Pricing, invoicing</td>
+</tr>
+<tr>
+<td>16</td>
+<td><strong>Institutional (B2B) demand in Kano</strong></td>
+<td>Density wedge (O1)</td>
+<td>No public data at all; B2B rails exist nationally (Omnibiz/MarketForce/B2B BNPL $1.4bn)</td>
+<td>Research finding; snippets</td>
+<td>Low</td>
+<td>Missed fastest path to density</td>
+<td>5 institutional interviews (A1)</td>
+<td>Founders</td>
+<td>Days 1–7</td>
+<td>Segment priority</td>
+</tr>
+<tr>
+<td>17</td>
+<td><strong>Radio reach/CAC in Kano</strong></td>
+<td>Marketing plan</td>
+<td>SCIMDER 2024: 51% listen; n=737; no CPM data</td>
+<td>Spotlight Post/Premium Times Feb 2025</td>
+<td>Medium</td>
+<td>Wasted marketing budget</td>
+<td>Buy 1 test spot with trackable offer code</td>
+<td>Marketing lead</td>
+<td>Days 8–21</td>
+<td>Channel mix</td>
+</tr>
+<tr>
+<td>18</td>
+<td><strong>Order density achievable in one polygon</strong></td>
+<td>The GoLemon death variable</td>
+<td>No Kano drop-density data; competitor micro-scale</td>
+<td>Research finding</td>
+<td>Unverified</td>
+<td>Company fails despite positive per-order contribution</td>
+<td>Rider interviews + pilot drops/km² (A5/A8)</td>
+<td>Ops lead</td>
+<td>Day 30</td>
+<td>Scale vs pause decision</td>
+</tr>
+<tr>
+<td>19</td>
+<td><strong>Cold chain needed at launch?</strong></td>
+<td>Capex</td>
+<td>Nigeria &lt;1,000 reefers vs 25,000 needed; 40% produce loss claims (sponsor provenance)</td>
+<td>USITA 2022; Nairametrics 2025 (partner content)</td>
+<td>Medium</td>
+<td>Spoilage/capex trap</td>
+<td>Decision: ambient-first (recommended)</td>
+<td>Founders</td>
+<td>Now</td>
+<td>Assortment scope</td>
+</tr>
+<tr>
+<td>20</td>
+<td><strong>"Kano Emira levy" / "Electronic Transactions Act 2015"</strong> (brief items)</td>
+<td>Compliance completeness</td>
+<td><strong>Neither could be found in any official source</strong></td>
+<td>cac/fccpc/nrs searches</td>
+<td>Unverified (likely non-existent)</td>
+<td>Wasted compliance effort or missed obligation</td>
+<td>Ask lawyer to confirm against gazette</td>
+<td>Lawyer</td>
+<td>Days 1–14</td>
+<td>Compliance checklist</td>
+</tr>
+</tbody>
+</table>
+<h3 id="discovered-material-gaps-beyond-the-briefs-seven">Discovered material gaps beyond the brief's seven</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Gap</th>
+<th>Impact</th>
+<th>Verify via</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21</td>
+<td>No independent evidence <strong>Ghadco supplies small/new retailers</strong></td>
+<td>Sourcing plan may fail at first contact</td>
+<td>Direct meeting</td>
+<td>Founders</td>
+</tr>
+<tr>
+<td>22</td>
+<td><strong>Ghadco's "36-state warehouse" claim unverified</strong></td>
+<td>Cannot build out-of-state supply on it</td>
+<td>Depot-by-depot check before expansion</td>
+<td>Ops</td>
+</tr>
+<tr>
+<td>23</td>
+<td><strong>Chowdeck/Glovo Kano entry timing unknown</strong> (Uber owns Glovo Africa)</td>
+<td>Window may be shorter than assumed</td>
+<td>Quarterly monitoring</td>
+<td>Founders</td>
+</tr>
+<tr>
+<td>24</td>
+<td><strong>FCCPC sales-promotion registration</strong> applicability to discounts unknown</td>
+<td>Enforcement risk on promos</td>
+<td>Lawyer/FCCPC enquiry</td>
+<td>Lawyer</td>
+</tr>
+<tr>
+<td>25</td>
+<td><strong>Kano state/LGA permit schedule</strong> (business premises, tenement, signage) not retrieved (PDF/425 errors)</td>
+<td>Operating without permits</td>
+<td>KIRS + LGA physical enquiry</td>
+<td>Ops</td>
+</tr>
+<tr>
+<td>26</td>
+<td><strong>Okada/keke regulatory status</strong> in Kano unknown (periodic bans)</td>
+<td>Delivery fleet disruption</td>
+<td>State transport authority enquiry</td>
+<td>Ops</td>
+</tr>
+<tr>
+<td>27</td>
+<td><strong>NLSS 2022/23 &amp; GHS Panel Wave 5</strong> household data not obtained (PDFs)</td>
+<td>Basket-size anchor stuck at 2019 data</td>
+<td>Download from nigerianstat.gov.ng</td>
+<td>Analyst</td>
+</tr>
+<tr>
+<td>28</td>
+<td><strong>EFInA A2F North-West/Kano microdata</strong> not obtained</td>
+<td>Payment-behaviour inputs generic</td>
+<td>Free request from EFInA</td>
+<td>Analyst</td>
+</tr>
+<tr>
+<td>29</td>
+<td><strong>Paga &amp; PayGate commercial terms unpublished</strong></td>
+<td>Cannot evaluate two shortlisted PSPs</td>
+<td>Written RFP responses</td>
+<td>Tech lead</td>
+</tr>
+<tr>
+<td>30</td>
+<td><strong>Local supermarket claims (Sahad, Sahibco, Quick Buy, Barakat) unverified</strong></td>
+<td>Competitive benchmark incomplete</td>
+<td>In-person audit (A4)</td>
+<td>Ops</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="part-b-research-evidence-register-sample-representative-entries-across-all-areas">Part B — Research evidence register (sample; representative entries across all areas)</h2>
+<table>
+<thead>
+<tr>
+<th>EvID</th>
+<th>Research question</th>
+<th>Claim/finding</th>
+<th>Source (org)</th>
+<th>Pub. date</th>
+<th>Accessed</th>
+<th>Geo relevance</th>
+<th>Evidence type</th>
+<th>Conf.</th>
+<th>Limitations</th>
+<th>Effect on decisions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E01</td>
+<td>Market size</td>
+<td>Nigeria retail ₦25.4trn/$19.0bn 2025</td>
+<td>Euromonitor via Practical Ecommerce</td>
+<td>1 Sep 2026</td>
+<td>30 Oct 2026</td>
+<td>Nigeria</td>
+<td>Industry report (secondary relay)</td>
+<td>Medium</td>
+<td>Paywalled original</td>
+<td>Anchors TAM cross-check</td>
+</tr>
+<tr>
+<td>E02</td>
+<td>Online grocery size</td>
+<td>US$95m 2025, 0–5% share, 87–87.5% abandonment</td>
+<td>ECDB</td>
+<td>2025 (live page)</td>
+<td>30 Oct 2026</td>
+<td>Nigeria</td>
+<td>Modelled market data</td>
+<td>Med-High</td>
+<td>Modelled, not audited</td>
+<td>Sets penetration reality; conversion assumptions</td>
+</tr>
+<tr>
+<td>E03</td>
+<td>Channel structure</td>
+<td>Open market 78–85% of FMCG volume</td>
+<td>DALA citing NielsenIQ/Euromonitor</td>
+<td>29 Mar 2026</td>
+<td>30 Oct 2026</td>
+<td>Nigeria</td>
+<td>Vendor analysis citing industry</td>
+<td>Medium</td>
+<td>Underlying NIQ tables not public</td>
+<td>Informal competition framing</td>
+</tr>
+<tr>
+<td>E04</td>
+<td>Channel structure</td>
+<td>70% food shopping informal; open-air 72% of retail</td>
+<td>USDA FAS GAIN NI2024-0014</td>
+<td>3 Oct 2024</td>
+<td>30 Oct 2026</td>
+<td>Nigeria</td>
+<td>Government report</td>
+<td>Medium</td>
+<td><strong>Snippet only — PDF not opened; verify manually</strong></td>
+<td>Most citable structural figure</td>
+</tr>
+<tr>
+<td>E05</td>
+<td>Inflation</td>
+<td>Sept 2026 headline 14.63%</td>
+<td>NBS via TradingEconomics/press</td>
+<td>Oct 2026</td>
+<td>30 Oct 2026</td>
+<td>Nigeria</td>
+<td>Official statistic (relay)</td>
+<td>High (headline)</td>
+<td>Food 19.59% snippet-level; CPI rebased Jan 2025</td>
+<td>Pricing discipline policy</td>
+</tr>
+<tr>
+<td>E06</td>
+<td>Kano population</td>
+<td>Metro 4.91m; state 15.46m (2022 proj.)</td>
+<td>citypopulation.de (NPC/NBS)</td>
+<td>2022 proj.</td>
+<td>29 Oct 2026</td>
+<td>Kano</td>
+<td>Official projections</td>
+<td>High</td>
+<td>Census disputed; page warns of error</td>
+<td>Sizing base (not state pop)</td>
+</tr>
+<tr>
+<td>E07</td>
+<td>Kano poverty</td>
+<td>MPI 66.3%, MPI 0.270</td>
+<td>NBS/OPHI MPI 2022</td>
+<td>17 Nov 2022</td>
+<td>29 Oct 2026</td>
+<td>Kano State</td>
+<td>Official survey</td>
+<td>Med-High</td>
+<td>Snippet-triangulated (PDF)</td>
+<td>Price-sensitivity, value formats</td>
+</tr>
+<tr>
+<td>E08</td>
+<td>Connectivity</td>
+<td>Kano 9.03m internet subs, 3rd nationally</td>
+<td>NBS internet subscriptions</td>
+<td>Q4 2023</td>
+<td>29 Oct 2026</td>
+<td>Kano State</td>
+<td>Official statistic</td>
+<td>High</td>
+<td>Subscriptions ≠ users; 2023 data</td>
+<td>Digital reach confidence</td>
+</tr>
+<tr>
+<td>E09</td>
+<td>Competitor status</td>
+<td>Glovo Nigeria: Lagos/Abuja/PH/Ibadan; Country MD confirmed; fastest-growing market</td>
+<td>Techeconomy</td>
+<td>6 Oct 2026</td>
+<td>30 Oct 2026</td>
+<td>Nigeria</td>
+<td>News (direct read)</td>
+<td>High</td>
+<td>Company-sourced claims</td>
+<td>Threat window assessment</td>
+</tr>
+<tr>
+<td>E10</td>
+<td>Competitor status</td>
+<td>glovoapp.com/en/ng/kano → HTTP 404</td>
+<td>Glovo official site</td>
+<td>live</td>
+<td>30 Oct 2026</td>
+<td>Kano</td>
+<td>Primary fetch</td>
+<td>High</td>
+<td>404 ≠ permanent</td>
+<td>White-space claim</td>
+</tr>
+<tr>
+<td>E11</td>
+<td>Competitor status</td>
+<td>Jumia Food discontinued in 7 markets</td>
+<td>Jumia Group</td>
+<td>14 Dec 2023</td>
+<td>30 Oct 2026</td>
+<td>Nigeria+</td>
+<td>Company announcement</td>
+<td>High</td>
+<td>—</td>
+<td>Category economics lesson</td>
+</tr>
+<tr>
+<td>E12</td>
+<td>Failure case</td>
+<td>GoLemon shutdown; ₦43,700 basket; positive contribution; density problem</td>
+<td>TechCabal</td>
+<td>29 Jul 2026</td>
+<td>30 Oct 2026</td>
+<td>Lagos</td>
+<td>Journalism (direct read)</td>
+<td>High</td>
+<td>Company statements</td>
+<td>Core risk model (T2)</td>
+</tr>
+<tr>
+<td>E13</td>
+<td>Failure case</td>
+<td>Copia liquidation; $123m raised; 50k agents</td>
+<td>TechCabal</td>
+<td>30 Sep 2026</td>
+<td>30 Oct 2026</td>
+<td>Kenya</td>
+<td>Journalism (direct read)</td>
+<td>High</td>
+<td>Kenya context</td>
+<td>Agent-model + infrastructure lesson</td>
+</tr>
+<tr>
+<td>E14</td>
+<td>Success case</td>
+<td>Chowdeck profitable; 11 cities; $9m raise; 40→500 dark stores</td>
+<td>TechCrunch</td>
+<td>11 Aug 2025</td>
+<td>30 Oct 2026</td>
+<td>Nigeria</td>
+<td>Journalism (direct read)</td>
+<td>High</td>
+<td>Profitability is a company claim</td>
+<td>Sequence + kill-rule playbook</td>
+</tr>
+<tr>
+<td>E15</td>
+<td>Unit-economics benchmark</td>
+<td>Blinkit ~0.3% adj. EBITDA on order value, 2,400 stores</td>
+<td>Eternal results via secondary</td>
+<td>Oct 2026</td>
+<td>30 Oct 2026</td>
+<td>India</td>
+<td>Earnings (snippet)</td>
+<td>Medium</td>
+<td>Not primary filing; India density</td>
+<td>Margin-target realism</td>
+</tr>
+<tr>
+<td>E16</td>
+<td>Supplier identity</td>
+<td>Ghadco Nigeria Ltd: Kano HQ, portfolio, contacts</td>
+<td>Ghadco website</td>
+<td>updated 26 Nov 2024</td>
+<td>30 Oct 2026</td>
+<td>Kano</td>
+<td>Company source</td>
+<td>High (identity)</td>
+<td>36-state claim self-published</td>
+<td>Supplier outreach plan</td>
+</tr>
+<tr>
+<td>E17</td>
+<td>Supplier identity</td>
+<td>Pop Cola = Mamuda Beverages, Kano; FSSC 22000; open distributor invite</td>
+<td>Mamuda sites + franchise listing</td>
+<td>live 2026</td>
+<td>30 Oct 2026</td>
+<td>Kano</td>
+<td>Company source</td>
+<td>High</td>
+<td>Terms "negotiable", none published</td>
+<td>Sourcing strategy</td>
+</tr>
+<tr>
+<td>E18</td>
+<td>Payment fees</td>
+<td>Paystack 1.5%+₦100 cap ₦2,000; DVA 1% cap ₦300; T+1</td>
+<td>Paystack support KB</td>
+<td>live</td>
+<td>30 Oct 2026</td>
+<td>Nigeria</td>
+<td>Official docs</td>
+<td>High</td>
+<td>paystack.com/pricing 403 to bots</td>
+<td>Payment cost model, PSP scorecard</td>
+</tr>
+<tr>
+<td>E19</td>
+<td>Payment fees</td>
+<td>Monnify 1.5% cap ₦2,000; T+0 22:00; splits max 5 manual</td>
+<td>Monnify pricing/docs</td>
+<td>live</td>
+<td>30 Oct 2026</td>
+<td>Nigeria</td>
+<td>Official docs</td>
+<td>High</td>
+<td>₦500 VA line ambiguous</td>
+<td>PSP scorecard</td>
+</tr>
+<tr>
+<td>E20</td>
+<td>Payment reliability</td>
+<td>Paystack 2019 outage: debits without value; queue failure independent of payments</td>
+<td>Paystack blog (CTO)</td>
+<td>15 Aug 2019</td>
+<td>30 Oct 2026</td>
+<td>Nigeria</td>
+<td>First-party post-mortem</td>
+<td>High</td>
+<td>Historical</td>
+<td>Verify-not-webhook requirement</td>
+</tr>
+<tr>
+<td>E21</td>
+<td>Delivery cost</td>
+<td>GIG Logistics: 3 Kano centres, closed Sundays</td>
+<td>GIG Logistics</td>
+<td>live</td>
+<td>30 Oct 2026</td>
+<td>Kano</td>
+<td>Company source</td>
+<td>High</td>
+<td>—</td>
+<td>3PL option, 7-day gap</td>
+</tr>
+<tr>
+<td>E22</td>
+<td>Delivery cost</td>
+<td>Kwik now "focused on Lagos Metropolitan Area"</td>
+<td>kwik.delivery</td>
+<td>live</td>
+<td>30 Oct 2026</td>
+<td>Nigeria</td>
+<td>Company source</td>
+<td>High</td>
+<td>Third parties still list Kano</td>
+<td>Rules out assumed partner</td>
+</tr>
+<tr>
+<td>E23</td>
+<td>COD risk</td>
+<td>COD rejection 20–30%; ~23% cash share</td>
+<td>Selligate / PaymentsCMI</td>
+<td>2024–26</td>
+<td>30 Oct 2026</td>
+<td>Nigeria</td>
+<td>Vendor page / snippet</td>
+<td>Low-Med</td>
+<td>Vendor incentive; no primary citation</td>
+<td>Prepaid-first policy (to be validated)</td>
+</tr>
+<tr>
+<td>E24</td>
+<td>Kano media</td>
+<td>51% listen to radio; station leaders; devices</td>
+<td>SCIMDER n=737 via Spotlight Post/Premium Times</td>
+<td>Feb 2025</td>
+<td>30 Oct 2026</td>
+<td>Kano State</td>
+<td>Academic/media study</td>
+<td>Medium</td>
+<td>One state, one centre, no CPM data</td>
+<td>Channel mix</td>
+</tr>
+<tr>
+<td>E25</td>
+<td>Regulation</td>
+<td>FIRS replaced by Nigeria Revenue Service (2025 Act)</td>
+<td>NRS / Legal500-KPMG</td>
+<td>5 Aug 2025</td>
+<td>30 Oct 2026</td>
+<td>Nigeria</td>
+<td>Official + law-firm analysis</td>
+<td>High</td>
+<td>Commencement date to confirm</td>
+<td>Tax compliance checklist</td>
+</tr>
+<tr>
+<td>E26</td>
+<td>Regulation</td>
+<td>FCCPC e-commerce: all disclosures before payment</td>
+<td>FCCPC</td>
+<td>live</td>
+<td>30 Oct 2026</td>
+<td>Nigeria</td>
+<td>Official guidance</td>
+<td>High</td>
+<td>—</td>
+<td>Delivery-fee disclosure policy</td>
+</tr>
+<tr>
+<td>E27</td>
+<td>Regulation</td>
+<td>NDPA audit regime: 31 March returns via DPCO; penalties ₦10m/2%</td>
+<td>Advocaat via Legal500</td>
+<td>21 Jan 2026</td>
+<td>30 Oct 2026</td>
+<td>Nigeria</td>
+<td>Law-firm analysis</td>
+<td>Med-High</td>
+<td>Threshold text unverified</td>
+<td>Compliance timeline</td>
+</tr>
+<tr>
+<td>E28</td>
+<td>Regulation</td>
+<td>No "Cybersecurity Act 2025"/"NCSA"; Cybercrimes (Amendment) Act 2024; 0.5% levy suspended</td>
+<td>PLAC/KPMG/Dubawa</td>
+<td>2024–25</td>
+<td>30 Oct 2026</td>
+<td>Nigeria</td>
+<td>Statute text + secondary</td>
+<td>Medium-High</td>
+<td>Dubawa page 404</td>
+<td>Correct compliance claims</td>
+</tr>
+<tr>
+<td>E29</td>
+<td>Tech environment</td>
+<td>Android 84.2% of Nigeria mobile; Tecno/Infinix lead</td>
+<td>StatCounter</td>
+<td>Sept 2026</td>
+<td>30 Oct 2026</td>
+<td>Nigeria</td>
+<td>Measurement panel</td>
+<td>High</td>
+<td>Urban-skewed panels</td>
+<td>Product performance targets</td>
+</tr>
+<tr>
+<td>E30</td>
+<td>Customer acquisition</td>
+<td>PalmPay ₦250 per activated referral</td>
+<td>Independent NG</td>
+<td>21 Jun 2024</td>
+<td>30 Oct 2026</td>
+<td>Nigeria</td>
+<td>News (direct read)</td>
+<td>Medium</td>
+<td>2024 promo rate, may have changed</td>
+<td>Referral budget anchor</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conflicts register (per §4.5 of the brief):</strong> (a) e-commerce size — Euromonitor $368m (goods) vs Mordor $10.5bn (total GMV): scope difference, use Euromonitor for grocery relevance; (b) $13.2bn "modern retail" (2024) vs $19bn total (2025): likely scope labelling error in trade press — use $19bn; (c) informal share 70% (USDA, transactions) vs 78–95% (NielsenIQ, volume) vs ~90% (Oxford Business Group, value): different bases — quote with basis; (d) petrol ₦1,330 (GlobalPetrolPrices) vs ₦1,596 (NBS PMS watch): use higher for modelling; (e) Ghadco founded 1991 (company) vs 1993 (register): company claim preferred, flagged; (f) inflation series pre/post Jan-2025 rebase: never chart as one line.</p>
+    <div class="pager"><a href="11-30-day-validation-plan.html">← 11. 30-Day Validation Plan</a><a href="13-decision-framework.html">13. Decision Framework →</a></div>
+  </div>
+</main>
+</div>
+</body>
+</html>
